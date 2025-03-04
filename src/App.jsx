@@ -7,7 +7,7 @@ import Nav from './Components/Nav'
 import Sec1 from './Components/Home/Sec1'
 import New from './Components/NewTrend/New'
 import Bottom from './Components/Bottom'
-import Women from './Components/Home/Women'
+import Women from './Components/women/women'
 
 function App() {
 

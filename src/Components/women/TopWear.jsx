@@ -23,7 +23,7 @@ const TopWear = () => {
                 {/* <div className='fle border'> */}
                 <h3>{item.title}</h3>
                 <strong className=' py-1'>₹{item.price}</strong><br />
-                <button className='p-1 hover:shadow-lg shadow-gray-500  rounded  text-white bg-blue-500 hover:bg-blue-700'>Buy Now</button>
+                <button className='but2'>Buy Now</button>
                 {/* </div> */}
                 </div>
             </div>

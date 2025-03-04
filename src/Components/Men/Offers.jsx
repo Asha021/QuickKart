@@ -1,0 +1,74 @@
+import React from 'react'
+
+const Offers = () => {
+  return (
+    <div>
+       <div className='gap-10 grid'>
+        <h1 className='ml-20 font  text-5xl flex '>Offers Of The Day</h1>
+        <div className='flex mx-20  gap-2'>
+        <div 
+        style={{
+            backgroundImage: "url(/girls/wool.jpeg)",
+            backgroundSize: "cover",
+            height:"400px",
+            width:"400px",
+            cursor:"pointer"
+        }}
+        ><span  className='py-60 ml-20 font  text-5xl flex text-white ' >25% OFF <br/>Buy Now </span></div>
+        <div
+        style={{
+            backgroundImage: "url(/girls/hat.jpeg)",
+            backgroundSize: "cover",
+            height:"400px",
+            width:"400px",
+            cursor:"pointer"
+        }}
+        ><span  className='py-60 ml-20 font  text-5xl flex text-white ' >50% OFF <br /> Buy Now </span></div>
+         <div
+        style={{
+            backgroundImage: "url(/girls/fashon.jpeg)",
+            backgroundSize: "cover",
+            height:"400px",
+            width:"400px",
+            cursor:"pointer"
+        }}
+        ><span  className='py-60 ml-20 font  text-5xl flex text-white ' >50% OFF <br /> Buy Now </span></div>
+        </div>
+        <h1 className='ml-20 font  text-5xl flex '>New Collection</h1>
+        <div className='flex mx-20  gap-2'>
+        <div 
+        style={{
+            backgroundImage: "url(/girls/wool.jpeg)",
+            backgroundSize: "cover",
+            height:"400px",
+            width:"400px",
+            cursor:"pointer"
+        }}
+        ><span  className='py-60 ml-20 font  text-5xl flex text-white ' >25% OFF <br/>Buy Now </span></div>
+        <div
+        style={{
+            backgroundImage: "url(/girls/hat.jpeg)",
+            backgroundSize: "cover",
+            height:"400px",
+            width:"400px",
+            cursor:"pointer"
+        }}
+        ><span  className='py-60 ml-20 font  text-5xl flex text-white ' >50% OFF <br /> Buy Now </span></div>
+         <div
+        style={{
+            backgroundImage: "url(/girls/fashon.jpeg)",
+            backgroundSize: "cover",
+            height:"400px",
+            width:"400px",
+            cursor:"pointer"
+        }}
+        ><span  className='py-60 ml-20 font  text-5xl flex text-white ' >50% OFF <br /> Buy Now </span></div>
+        </div>
+      </div>
+     
+
+    </div>
+  )
+}
+
+export default Offers

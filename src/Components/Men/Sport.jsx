@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Offers = () => {
+const Sport = () => {
     const data = [
         {img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/s/s/s-tblhn-dp4-d144-tripr-original-imah8896zhqufmqy.jpeg?q=70", title:"T-shirt", price:499},
         {img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/s/s/s-tblhn-dp4-d144-tripr-original-imah8896zhqufmqy.jpeg?q=70", title:"Shoes", price:499},
@@ -12,8 +12,8 @@ const Offers = () => {
     ]
   return (
     <div>
-      <div className='mx-20  my-10 '>
-      <h1 className=' font-bold text-4xl py-4'>499 Only</h1>
+        <div className='mx-20  my-10 '>
+      <h1 className=' font-bold text-4xl py-4'>Sports Wear</h1>
       <div className='flex  gap-4'>
         {data.map((item, index) => (
             <div key={index} className='border border-gray-200 p-4'>
@@ -31,4 +31,4 @@ const Offers = () => {
   )
 }
 
-export default Offers
+export default Sport

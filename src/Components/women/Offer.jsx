@@ -5,7 +5,6 @@ const Offer = () => {
     <div>
       <div className='flex mx-20  gap-2'>
         <div 
-       
         style={{
             backgroundImage: "url(/girls/wool.jpeg)",
             backgroundSize: "cover",

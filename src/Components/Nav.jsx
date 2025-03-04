@@ -16,7 +16,7 @@ const Nav = () => {
                 {/* links */}
                 <Link to="/new/trends" className ="text-gray-700 hover:text-[#903233]">New Arrivals</Link>
                 <Link to="/Women/new/trendy/fashion" className ="text-gray-700 hover:text-[#903233]">Women</Link>
-                <Link to="#" className ="text-gray-700 hover:text-[#903233]">Men</Link>
+                <Link to="/mens/section" className ="text-gray-700 hover:text-[#903233]">Men</Link>
                 <Link to="#" className ="text-gray-700 hover:text-[#903233]">Kids</Link>
                 <Link to="#" className ="text-gray-700 hover:text-[#903233]">Personal Care</Link>
                 <Link to="#" className ="text-gray-700 hover:text-[#903233]">Sale</Link>

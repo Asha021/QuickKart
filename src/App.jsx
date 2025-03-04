@@ -8,6 +8,7 @@ import Sec1 from './Components/Home/Sec1'
 import New from './Components/NewTrend/New'
 import Bottom from './Components/Bottom'
 import Women from './Components/women/women'
+import Mens from './Components/Men/Mens'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
             <Route  path='/' element={<Sec1 />} />
             <Route  path='/new/trends' element={<New />} />
             <Route  path='/Women/new/trendy/fashion' element={<Women />} />
+            <Route  path='/mens/section' element={<Mens />} />
       </Routes>
       <Bottom />
     </>

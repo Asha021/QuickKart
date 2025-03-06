@@ -14,7 +14,13 @@ const BootomWear = () => {
     <div>
        <div>
       <div className='mx-20  my-10 '>
-      <h1 className=' font-bold text-4xl py-4'>Bottom Wear</h1>
+      <div className='flex justify-between items-center p-4'>
+  <h1 className='font-bold text-4xl'>Bottom Wear</h1>
+  <button className='hover:bg-red-900 hover:text-white text-lg rounded-xl border border-red-900 px-8 py-2 transition duration-300'>
+    See more
+  </button>
+</div>
+      {/* <h1 className=' font-bold text-4xl py-4'>Bottom Wear</h1> */}
       <div className='flex  gap-4'>
         {data.map((item, index) => (
             <div key={index} className='border border-gray-200 p-4'>

@@ -1,14 +1,22 @@
 @import "tailwindcss";
-/* @import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Monomakh&family=Noto+Sans+TC&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
-.font{
-    font-family: "Libre Franklin", sans-serif;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+} 
 
 @layer components{
+    /* .fonts{
+        @apply font- "Libre Franklin", sans-serif;
+    } */
     .but1{
        @apply p-2 pb-5  bg-red-900 mt-10 hover:bg-red-950 border;
     }
     .but2{
         @apply p-2 px-4 hover:shadow-lg shadow-gray-500  rounded  text-white bg-blue-500 hover:bg-blue-700;
     }
-}   
+}   .scaleImg{
+    @apply  h-50  hover:scale-105 transform w-full ;
+    /* @apply w-32 hover:scale-105 h-44 object-cover items-center text-center justify-center flex; */
+}

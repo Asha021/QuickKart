@@ -20,24 +20,23 @@ const Women = () => {
     },
   ];
   return (
-    <div>
-      <div className="mx-20 mt-4">
+    <div className=" ">
+      <div className="lg:mx-20  mx-10 mt-4">
         <h2 className="text-4xl py-4 font-bold mx-5">Women</h2>
-        <div className="flex gap-0 ">
-          {data.map((key) => (
-            <div>
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 ">
+          {data.map((key, index) => (
+            <div key={index} className="w-full">
               <div
                 style={{
                   backgroundImage: `url(${key.img})`,
                   backgroundSize: "cover",
-                  height:"300px",
-                  width:"300px",
-                  cursor:"pointer"
+                  backgroundPosition: "center",
+                  height: "300px",
+                  cursor: "pointer",
                 }}
+                className="flex items-end p-5 text-white text-2xl font-bold"
               >
-               <div className=" px-5 text-white text-2xl font pt-64">
-               <h2>{key.tilte}</h2>
-               </div>
+                <h2>{key.tilte}</h2>
               </div>
             </div>
           ))}

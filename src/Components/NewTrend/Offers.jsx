@@ -2,30 +2,38 @@ import React from 'react'
 
 const Offers = () => {
     const data = [
-        {img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/s/s/s-tblhn-dp4-d144-tripr-original-imah8896zhqufmqy.jpeg?q=70", title:"T-shirt", price:499},
-        {img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/s/s/s-tblhn-dp4-d144-tripr-original-imah8896zhqufmqy.jpeg?q=70", title:"Shoes", price:499},
-        {img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/s/s/s-tblhn-dp4-d144-tripr-original-imah8896zhqufmqy.jpeg?q=70", title:"Saree", price:499},
-        {img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/s/s/s-tblhn-dp4-d144-tripr-original-imah8896zhqufmqy.jpeg?q=70", title:"Night dress", price:499},
-        {img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/s/s/s-tblhn-dp4-d144-tripr-original-imah8896zhqufmqy.jpeg?q=70", title:"Watch", price:499},
-        {img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/s/s/s-tblhn-dp4-d144-tripr-original-imah8896zhqufmqy.jpeg?q=70", title:"Shoes", price:499},
-        {img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/s/s/s-tblhn-dp4-d144-tripr-original-imah8896zhqufmqy.jpeg?q=70", title:"Pant", price:499}
+        {img:"/new/tshirt.jpeg", title:"T-shirt", price:499},
+        {img:"/new/shoes.jpeg", title:"Shoes", price:499},
+        {img:"/new/saree.jpeg", title:"Saree", price:499},
+        {img:"/new/nyt.jpeg", title:"Night dress", price:499},
+        {img:"/new/watch.jpeg", title:"Watch", price:499},
+        {img:"/new/shoes2.jpeg", title:"Shoes", price:499},
+        // {img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/s/s/s-tblhn-dp4-d144-tripr-original-imah8896zhqufmqy.jpeg?q=70", title:"Pant", price:499}
     ]
   return (
-    <div>
-      <div className='mx-20  my-10 '>
-      <h1 className=' font-bold text-4xl py-4'>499 Only</h1>
-      <div className='flex  gap-4'>
-        {data.map((item, index) => (
-            <div key={index} className='border border-gray-200 p-4'>
-                <img src={item.img} alt="img" className='w-32 hover:scale-105 h-44 object-cover' />
-                <div className='text-center'>
-                <h3>{item.title}</h3>
-                <strong>₹{item.price}</strong><br />
-                <button className='but2'>Buy Now</button>
-                </div>
-            </div>
-        ))}
-      </div>
+    <div className=''>
+      <div className='mx-5 lg:mx-20 my-10'>
+      <div className='md:flex md:justify-between items-center p-4'>
+  <h1 className='font-bold text-4xl md:py-0 py-3 '>499 Only</h1>
+  <button className='hover:bg-red-900 hover:text-white text-lg rounded-xl border border-red-900 px-8 py-2 transition duration-300'>
+    See more
+  </button>
+</div>
+
+        <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 xl:grid-cols-6 gap-4 '>
+          {data.map((item, index) => (
+              <div key={index} className='border border-gray-300 p-4'>
+                  <img src={item.img} alt="img"  className="scaleImg " />
+
+                  <div className='text-center h-auto mt-2 '>
+                      <h3 className='font-medium text-lg'>{item.title}</h3>
+                     <div className=''>
+                     <strong className='block my-1 text-lg text-red-700 '>₹{item.price}</strong>
+                      {/* <button className='bg-[#903233] text-white px-4 py-2 rounded hover:bg-[#7a2a2a]'>Buy Now</button> */}
+                      </div>                  </div>
+              </div>
+          ))}
+        </div>
       </div>
     </div>
   )

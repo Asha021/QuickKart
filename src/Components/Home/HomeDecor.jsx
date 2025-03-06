@@ -2,63 +2,65 @@ import React from "react";
 
 const HomeDecor = () => {
   return (
-    <div>
-      <div class="mx-20 mt-4">
-        <h2 class="text-4xl py-4 font-bold mx-5">New In Home</h2>
+    <div className="">
+      <div className="mx-10 lg:mx-20 mt-4 ">
+        <h2 className="text-4xl py-4 font-bold">New In Home</h2>
 
-        <div class="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-2 gap-5">
           <div>
             <div
               style={{
                 backgroundImage: `url(decor/cusion.jpeg)`,
                 backgroundSize: "cover",
+                backgroundPosition: "center",
                 height: "350px",
-                width: "400px",
-                cursor:"pointer"
+                cursor: "pointer",
               }}
+              className="flex items-end p-5 text-white text-3xl font-bold"
             >
-              <h2 className=" px-5 text-white text-3xl font pt-70">Cousions</h2>
+              <h2>Cushions</h2>
             </div>
           </div>
 
-          <div class="row-span-2 gap-1 flex flex-col">
+          <div className="row-span-2 flex flex-col gap-5 md:gap-2 ">
             <div
               style={{
                 backgroundImage: `url(decor/dinning.jpeg)`,
                 backgroundSize: "cover",
+                backgroundPosition: "center",
                 height: "172px",
-                width: "400px",
-                cursor:"pointer"
+                cursor: "pointer",
               }}
+              className="flex items-center p-5 text-white text-2xl font-bold"
             >
-              <h2 className=" px-5 text-white text-2xl font p-30 text-gary-900">
-                Wallpapers
-              </h2>
+              <h2>Wallpapers</h2>
             </div>
             <div
               style={{
                 backgroundImage: `url(decor/first.jpeg)`,
                 backgroundSize: "cover",
-                height: "175px",
-                width: "400px",
-                cursor:"pointer"
+                backgroundPosition: "center",
+                height: "172px",
+                cursor: "pointer",
               }}
+              className="flex items-center p-10 text-white text-2xl font-bold"
             >
-              <h2 className=" px-5 text-white text-2xl font p-30">Lamps</h2>
+              <h2>Lamps</h2>
             </div>
           </div>
-          <div
-            style={{
-              backgroundImage: `url(decor/ofa.jpeg)`,
-              backgroundSize: "cover",
-              height: "350px",
-              width: "400px",
-              cursor:"pointer"
-            }}
-          >
-            <h2 className=" px-5 text-white text-3xl font pt-70">
-              Sofa & Decor
-            </h2>
+          <div>
+            <div
+              style={{
+                backgroundImage: `url(decor/ofa.jpeg)`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                height: "350px",
+                cursor: "pointer",
+              }}
+              className="flex items-end p-5 text-white text-3xl font-bold"
+            >
+              <h2>Sofa & Decor</h2>
+            </div>
           </div>
         </div>
       </div>

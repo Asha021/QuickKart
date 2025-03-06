@@ -1,31 +1,34 @@
-import React from 'react'
+import React from 'react';
 
 const Off = () => {
   return (
-    <div>
-      <div className='flex mx-20 gap-5'>
+    <div className=' md:mx-20 mx-10'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-5 '>
         <div 
-       
-        style={{
+          style={{
             backgroundImage: "url(/decor/cusion.jpeg)",
             backgroundSize: "cover",
-            height:"400px",
-            width:"600px",
-            cursor:"pointer"
-        }}
-        ><span  className='py-60 ml-20 font  text-5xl flex text-white ' >25% OFF <br/>Buy Now </span></div>
+            height: "300px",
+            cursor: "pointer",
+          }}
+          className='flex items-center justify-center text-white md:text-4xl lg:text-5xl text-3xl font-bold'
+        >
+          <span>25% OFF<br/>Buy Now</span>
+        </div>
         <div
-        style={{
+          style={{
             backgroundImage: "url(/decor/first.jpeg)",
             backgroundSize: "cover",
-            height:"400px",
-            width:"600px",
-            cursor:"pointer"
-        }}
-        ><span  className='py-60 ml-20 font  text-5xl flex text-white ' >50% OFF <br /> Buy Now </span></div>
+            height: "300px",
+            cursor: "pointer",
+          }}
+          className='flex items-center justify-center text-white md:text-4xl lg:text-5xl text-3xl font-bold'
+        >
+          <span>50% OFF<br/>Buy Now</span>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Off
+export default Off;

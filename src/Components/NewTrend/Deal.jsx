@@ -10,7 +10,7 @@ const Deal = () => {
     ]
   return (
     <div className=''>
-      <div className='mx-10 md:mx-20 my-10'>
+      <div className='lg:mx-20 mx-10 my-10'>
       
       <div className='md:flex md:justify-between items-center p-4'>
   <h1 className='font-bold text-4xl md:py-0 py-2'>Best Deals on Smartphones</h1>

@@ -11,7 +11,7 @@ const TopOffer = () => {
     ]
   return (
     <div>
-      <div className='md:mx-20 mx-10 my-10'>
+      <div className='lg:mx-20 mx-10 my-10'>
       <div className='md:flex md:justify-between items-center p-4'>
   <h1 className='font-bold text-4xl md:py-0 py-2'>Top Offers</h1>
   <button className='hover:bg-red-900 hover:text-white text-lg rounded-xl border border-red-900 px-8 py-2 transition duration-300'>

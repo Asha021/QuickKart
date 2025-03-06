@@ -2,29 +2,36 @@ import React from 'react'
 
 const Girls = () => {
     const data = [
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Vivo", price:11499},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Samsung", price:42299},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Oppo", price:21499},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Mi", price:22499},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Vivo-S20", price:11499},
+        {img:"/kid/child.jpeg", title:"Boys", price:11499},
+        {img:"/kid/child.jpeg", title:"Girls", price:42299},
+        {img:"/kid/child.jpeg", title:"Infant", price:21499},
+        {img:"/kid/child.jpeg", title:"Accessories", price:22499},
+        // {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Vivo-S20", price:11499},
        
     ]
   return (
     <div>
-      <div className='mx-20 my-10'>
-      <h1 className=' font-bold text-4xl py-4'>Girls Section</h1>
-      <div className='flex  gap-10'>
-        {data.map((item, index) => (
-            <div key={index} className='p-4 border border-gray-200 w-50'>
-                <img src={item.img} alt="img" className='scaleImg' />
-                <div className='text-center'>
-                <h3>{item.title}</h3>
-                <strong>₹{item.price}</strong><br />
-                <button className='but2'>Buy Now</button>
-                </div>
-            </div>
-        ))}
-      </div>
+      <div className="lg:mx-20  mx-10 mt-4 mb-14">
+        <h2 className="text-4xl py-4 font-bold">Categories</h2>
+        <div className="grid lg:grid-cols-4 gap-2 md:grid-cols-2 grid-cols-1 ">
+          {data.map((key) => (
+             <div>
+             <div
+               style={{
+                 backgroundImage: `url(${key.img})`,
+                 backgroundSize: "cover",
+                 height:"300px",
+                 backgroundPosition:"center",
+                 cursor:"pointer"
+               }}
+             >
+              <div className=" px-5 text-white text-3xl lg:text-4xl font pt-55">
+              <h2>{key.title}</h2>
+              </div>
+             </div>
+           </div>
+          ))}
+        </div>
       </div>
     </div>
   )

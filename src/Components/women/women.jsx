@@ -31,8 +31,8 @@ const women = () => {
         </div>
       </div>
       <TopWear />
-      <Slide />
       <Jwellary />
+      <Slide />
       <Offer />
       <BootomWear />
     </div>

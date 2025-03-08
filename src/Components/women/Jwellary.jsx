@@ -2,13 +2,13 @@ import React from 'react'
 
 const Jwellary = () => {
     const data = [
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:399},
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:599},
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:299},
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:199},
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:999},
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:899},
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:999},
+        {img:"/jwellry/jwe1.jpeg",title:"/a2-1.jpg",price:399},
+        {img:"/jwellry/jwe7.jpg",title:"/a2-1.jpg",price:599},
+        {img:"/jwellry/jwe3.jpg",title:"/a2-1.jpg",price:299},
+        {img:"/jwellry/jwe4.jpg",title:"/a2-1.jpg",price:199},
+        {img:"/jwellry/jwe5.jpg",title:"/a2-1.jpg",price:999},
+        {img:"/jwellry/jwe6.jpg",title:"/a2-1.jpg",price:899},
+        {img:"/jwellry/jwe2.jpg",title:"/a2-1.jpg",price:999},
     ]
   return (
     <div>

@@ -2,13 +2,13 @@ import React from 'react'
 
 const Sport = () => {
     const data = [
-        {img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/s/s/s-tblhn-dp4-d144-tripr-original-imah8896zhqufmqy.jpeg?q=70", title:"T-shirt", price:499},
-        {img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/s/s/s-tblhn-dp4-d144-tripr-original-imah8896zhqufmqy.jpeg?q=70", title:"Shoes", price:499},
-        {img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/s/s/s-tblhn-dp4-d144-tripr-original-imah8896zhqufmqy.jpeg?q=70", title:"Saree", price:499},
-        {img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/s/s/s-tblhn-dp4-d144-tripr-original-imah8896zhqufmqy.jpeg?q=70", title:"Night dress", price:499},
-        {img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/s/s/s-tblhn-dp4-d144-tripr-original-imah8896zhqufmqy.jpeg?q=70", title:"Watch", price:499},
-        {img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/s/s/s-tblhn-dp4-d144-tripr-original-imah8896zhqufmqy.jpeg?q=70", title:"Shoes", price:499},
-        {img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/s/s/s-tblhn-dp4-d144-tripr-original-imah8896zhqufmqy.jpeg?q=70", title:"Pant", price:499}
+      {img:"/sport/uppr2.jpg", title:"Samsung", price:42299},
+      {img:"/sport/upper2.jpg", title:"Oppo", price:21499},
+      {img:"/sport/tshirt.jpg", title:"Mi", price:22499},
+      {img:"/sport/sport6.jpg", title:"Vivo-S20", price:11499},
+      {img:"/sport/sport3.jpg", title:"Vivo-S20", price:11499},
+      {img:"/sport/bott1.jpg", title:"Vivo-S20", price:11499},
+      {img:"/sport/bott3.jpg", title:"Vivo-S20", price:11499},
     ]
   return (
     <div>

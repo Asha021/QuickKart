@@ -88,7 +88,7 @@ const Nav = () => {
           <Link to="/mens/section" className="text-gray-700 hover:text-[#903233]">Men</Link>
           <Link to="/kids/wear/collection" className="text-gray-700 hover:text-[#903233]">Kids</Link>
           <Link to="/personal/care/products" className="text-gray-700 hover:text-[#903233]">Personal Care</Link>
-          <Link to="/sale/new/collection" className="text-gray-700 hover:text-[#903233]">Sale</Link>
+          {/* <Link to="/sale/new/collection" className="text-gray-700 hover:text-[#903233]">Sale</Link> */}
           <div className='reletive'>
           <CiSearch size={24} className=' absolute p-1 text-gray-500' />
           <input  type="text" className='bg-gray-200 indent-6 px-3' placeholder='search for Products..'/>

@@ -28,9 +28,9 @@ const Mens = () => {
         </div>
       </div>
       <Sport />
-      <Indian />
-      <Offers />
       <Bottom />
+      <Offers />
+      <Indian />
     </div>
   )
 }

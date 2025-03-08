@@ -2,11 +2,12 @@ import React from 'react'
 
 const Indian = () => {
     const data = [
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Vivo", price:11499},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Samsung", price:42299},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Oppo", price:21499},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Mi", price:22499},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Vivo-S20", price:11499},
+        {img:"/sport/uppr1.jpg", title:"Vivo", price:11499},
+        {img:"/sport/sport.jpg" ,title:"Vivo", price:11499},
+        {img:"/sport/sport1.jpg", title:"Samsung", price:42299},
+        {img:"/sport/sport6.jpg" , title:"Oppo", price:21499},
+        {img: "/sport/sport4.jpg", title:"Mi", price:22499},
+        // {img:"/sport/sport5.jpg", title:"Vivo-S20", price:11499},
         // {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Oppo S-25", price:41199},
         // {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"mi-s20", price:14199}
     ]

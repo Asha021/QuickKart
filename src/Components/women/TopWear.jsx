@@ -2,13 +2,13 @@ import React from 'react'
 
 const TopWear = () => {
     const data = [
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:999},
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:599},
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:299},
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:1599},
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:699},
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:1999},
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:899},
+        {img:"/girlBott/dress.jpg",title:"BodyCon Dress",price:999},
+        {img:"/girlBott/dress8.jpeg",title:"Floral Dress",price:599},
+        {img:"/girlBott/dress2.jpg",title:"Short Dress",price:299},
+        {img:"/girlBott/dress3.jpg",title:"Skirts",price:1599},
+        {img:"/girlBott/dress4.jpg",title:"Shirts",price:699},
+        {img:"/girlBott/dress5.jpg",title:"Wool",price:1999},
+        {img:"/girlBott/dress6.jpg",title:"Trending Cloths",price:899},
     ]
   return (
     <div>

@@ -2,13 +2,13 @@ import React from 'react'
 
 const BootomWear = () => {
     const data = [
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:399},
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:599},
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:299},
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:199},
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:999},
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:899},
-        {img:"/a2-1.jpg",title:"/a2-1.jpg",price:999},
+        {img:"/girlBott/bott1.jpg",title:"Baggy Trouser",price:399},
+        {img:"/girlBott/bott2.jpg",title:"Plazo Pants",price:599},
+        {img:"/girlBott/bott3.jpg",title:"Pants",price:299},
+        {img:"/girlBott/bott4.jpg",title:"Trouser",price:199},
+        {img:"/girlBott/bott5.jpg",title:"Skirts",price:999},
+        {img:"/girlBott/bott6.jpg",title:"Baggy Shorts",price:899},
+        {img:"/girlBott/bott5 (1).jpg",title:"Shorts",price:999},
     ]
   return (
     <div>
@@ -29,7 +29,6 @@ const BootomWear = () => {
                       <h3 className='font-medium text-lg'>{item.title}</h3>
                      <div className=''>
                      <strong className='block my-1 text-lg text-red-700 '>₹{item.price}</strong>
-                     {/* <button className='but2'>Buy Now</button> */}
                      <button className='bg-[#903233] text-white px-4 py-2 rounded hover:bg-[#7a2a2a]'>Buy Now</button>
                       </div>                  </div>
               </div>

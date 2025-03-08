@@ -2,11 +2,11 @@ import React from 'react'
 
 const Bottom = () => {
     const data = [
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Vivo", price:11499},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Samsung", price:42299},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Oppo", price:21499},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Mi", price:22499},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Vivo-S20", price:11499},
+        {img:"/menIndian/ind1.jpeg", title:"Kurta Set", price:1499},
+        {img:"/menIndian/ind2.jpg", title:"Trendy Shirt", price:42299},
+        {img:"/menIndian/ind3.jpg", title:"Servani", price:21499},
+        {img:"/menIndian/ind5.jpg", title:"Basket", price:11499},
+        {img:"/menIndian/ind4.jpg", title:"Hoddy", price:22499},
     ]
   return (
     <div>

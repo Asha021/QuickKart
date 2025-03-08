@@ -17,14 +17,14 @@ const women = () => {
             alt="img"
             className="absolute top-0 left-0 w-full h-full  "
           />
-          <div className="relative bg-opacity-50 p-10 rounded-lg max-w-xl text-white">
+          <div className="relative bg-opacity-50  p-10 rounded-lg max-w-xl text-white">
             <h1 className="text-3xl  md:text-4xl lg:text-5xl">
-            Take advantage of great deals
+            Empower Your Beauty
             </h1>
-            <h2 className="text-2xl  mb-5">
-            <h2 className=""> on smartphones! & <br />another Offers</h2>
+            <h2 className="text-3xl mt-5 mb-5">
+            <h2 className="">Be Bold. Be Beautiful. Be You.</h2>
             </h2>
-            <button className="p-2 bg-red-900 hover:bg-red-950 border">
+            <button className="mainbut">
               Shop Now
             </button>
           </div>

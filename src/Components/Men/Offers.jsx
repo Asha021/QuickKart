@@ -8,7 +8,7 @@ const Offers = () => {
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 '>
       <div 
         style={{
-          backgroundImage: "url(/girls/wool.jpeg)",
+          backgroundImage: "url(/500pxPics/men.jpg)",
           backgroundSize: "cover",
           height: "300px",
           cursor: "pointer",
@@ -19,7 +19,7 @@ const Offers = () => {
       </div>
       <div
         style={{
-          backgroundImage: "url(/girls/hat.jpeg)",
+          backgroundImage: "url(/500pxPics/men2.jpg)",
           backgroundSize: "cover",
           height: "300px",
           cursor: "pointer",
@@ -30,7 +30,7 @@ const Offers = () => {
       </div>
       <div 
         style={{
-          backgroundImage: "url(/girls/fashon.jpeg)",
+          backgroundImage: "url(/500pxPics/men3.jpg)",
           backgroundSize: "cover",
           height: "300px",
           cursor: "pointer",
@@ -46,7 +46,7 @@ const Offers = () => {
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 '>
       <div 
         style={{
-          backgroundImage: "url(/girls/wool.jpeg)",
+          backgroundImage: "url(/500pxPics/men4.jpg)",
           backgroundSize: "cover",
           height: "300px",
           cursor: "pointer",
@@ -57,7 +57,7 @@ const Offers = () => {
       </div>
       <div
         style={{
-          backgroundImage: "url(/girls/hat.jpeg)",
+          backgroundImage: "url(/500pxPics/men5.jpg)",
           backgroundSize: "cover",
           height: "300px",
           cursor: "pointer",
@@ -68,7 +68,7 @@ const Offers = () => {
       </div>
       <div 
         style={{
-          backgroundImage: "url(/girls/fashon.jpeg)",
+          backgroundImage: "url(/500pxPics/men6.jpg)",
           backgroundSize: "cover",
           height: "300px",
           cursor: "pointer",

@@ -22,7 +22,7 @@ const New = () => {
             <h2 className="text-2xl  mb-5">
               on smartphones! & <br /> another Offers
             </h2>
-            <button className="p-3 px-5 bg-red-900 hover:bg-red-950 border">
+            <button className="mainbut">
               Shop Now
             </button>
           </div>

@@ -22,7 +22,7 @@ const kids = () => {
             <h2 className="text-2xl  mb-5">
             <h2 className=""> on smartphones! & <br />another Offers</h2>
             </h2>
-            <button className="p-2 bg-red-900 hover:bg-red-950 border">
+            <button className="mainbut">
               Shop Now
             </button>
           </div>

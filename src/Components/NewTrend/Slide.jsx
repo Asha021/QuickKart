@@ -5,11 +5,11 @@ const Slide = () => {
   const [slide, setSlide] = useState(0);
 
   const imgs = [
-    { names: "Grab The Best Deals ", review: "/a3-1.jpg" },
-    { names: "New Arrivals", review: "https://tse3.mm.bing.net/th?id=OIP.BJCe-jcOGmwdJqWrPAYoegHaE7&pid=Api&P=0&h=180" },
-    { names: "Grab Best Deals On Jwellary", review: "/a3-1.jpg" },
-    { names: "Buy & Get 50% Off", review: "https://tse3.mm.bing.net/th?id=OIP.BJCe-jcOGmwdJqWrPAYoegHaE7&pid=Api&P=0&h=180" },
-    { names: "Summer Offers Buy Now", review: "/a3-1.jpg" },
+    { names: "Grab The Best Deals ", review: "/270px/img1.jpeg" },
+    { names: "Summer Offers Buy Now", review: "/270px/mg5.jpeg" },
+    { names: "New Arrivals", review: "/270px/img2.jpeg" },
+    // { names: "Grab Best Deals On Jwellary", review: "/270px/img3.jpeg" },
+    { names: "Buy & Get 50% Off", review: "/270px/img4.jpeg" },
   ];
 
   const nextSlide = () => {

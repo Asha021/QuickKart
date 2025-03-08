@@ -7,7 +7,7 @@ const Offer = () => {
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 '>
       <div 
         style={{
-          backgroundImage: "url(/girls/wool.jpeg)",
+          backgroundImage: "url(/500pxPics/girl.jpg)",
           backgroundSize: "cover",
           height: "300px",
           cursor: "pointer",
@@ -18,7 +18,7 @@ const Offer = () => {
       </div>
       <div
         style={{
-          backgroundImage: "url(/girls/hat.jpeg)",
+          backgroundImage: "url(/500pxPics/girl2.jpg)",
           backgroundSize: "cover",
           height: "300px",
           cursor: "pointer",
@@ -29,7 +29,7 @@ const Offer = () => {
       </div>
       <div 
         style={{
-          backgroundImage: "url(/girls/fashon.jpeg)",
+          backgroundImage: "url(/500pxPics/girl3.jpg)",
           backgroundSize: "cover",
           height: "300px",
           cursor: "pointer",

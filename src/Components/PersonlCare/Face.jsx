@@ -16,7 +16,7 @@ const Face = () => {
                     <h1 className="lg:text-4xl text-3xl font-bold text-gray-800  pb-5">Bath & Body Washes</h1>
                 </header>
                     {data.map((item, index) => (
-                        <div key={index} className='cursor-pointer overflow-hidden hover:shadow-gray-400 shadow-md '>
+                        <div key={index}  data-aos="flip-up" className='cursor-pointer overflow-hidden hover:shadow-gray-400 shadow-md '>
                             <img src={item.img} alt={item.title} className='w-full h-64 object-cover' />
                             <div className='p-1 bg-gray-100 text-center'>
                                 <h2 className='text-2xl font-bold mb-2 text-gray-800'>Step {item.step}</h2>

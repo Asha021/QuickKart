@@ -4,8 +4,9 @@ const Offer = () => {
   return (
     <div className='lg:mx-20 mx-10'>
       <h1 className='lg:text-4xl text-3xl font-bold py-4'>Best Offers</h1>
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 '>
+    <div  className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 '>
       <div 
+      data-aos="flip-down"
         style={{
           backgroundImage: "url(/500pxPics/girl.jpg)",
           backgroundSize: "cover",
@@ -17,6 +18,7 @@ const Offer = () => {
         <span className='mt-30'>25% OFF<br/>Buy Now</span>
       </div>
       <div
+      data-aos="flip-down" 
         style={{
           backgroundImage: "url(/500pxPics/girl2.jpg)",
           backgroundSize: "cover",
@@ -28,6 +30,7 @@ const Offer = () => {
         <span className='mt-30'>50% OFF<br/>Buy Now</span>
       </div>
       <div 
+      data-aos="flip-down"
         style={{
           backgroundImage: "url(/500pxPics/girl3.jpg)",
           backgroundSize: "cover",

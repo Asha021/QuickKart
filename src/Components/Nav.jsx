@@ -1,65 +1,3 @@
-// import React, { useState } from 'react'
-// import { Link, useNavigate } from 'react-router-dom'
-// import { FaRegHeart } from "react-icons/fa"; //whishlist icon
-// import { IoCartOutline } from "react-icons/io5"; //cart icon
-// import { CiUser } from "react-icons/ci"; // user icon
-// import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; //icon open & close menu
-
-// const Nav = () => {
-//   const navigat = useNavigate()
-//   const [open,setOpen]=useState(false)
-
-//   return (
-//     // nav-bar
-//     <div>
-//       <div className ="fixed w-full grid border-b border-gray-200 ">
-//         <marquee className ="py-1  bg-[#903233] text-white ">🔥 Flat 50% Off on All Products! Shop Now! 🛒</marquee>
-//         <header className ="flex  w-full justify-between items-center bg-white p-1 px-5">
-//             <h1 className ="text-3xl font-bold text-[#903233] cursor-pointer" onClick={()=>navigat("/") }>QuickKart</h1>
-//             <nav className ="flex space-x-7 items-center">
-//                 {/* links */}
-//                 <Link to="/new/trends" className ="text-gray-700 hover:text-[#903233]">New Arrivals</Link>
-//                 <Link to="/Women/new/trendy/fashion" className ="text-gray-700 hover:text-[#903233]">Women</Link>
-//                 <Link to="/mens/section" className ="text-gray-700 hover:text-[#903233]">Men</Link>
-//                 <Link to="kids/wear/collection" className ="text-gray-700 hover:text-[#903233]">Kids</Link>
-//                 <Link to="/personal/care/products" className ="text-gray-700 hover:text-[#903233]">Personal Care</Link>
-//                 <Link to="/sale/new/collection" className ="text-gray-700 hover:text-[#903233]">Sale</Link>
-//                 <Link to="#" className="text-2xl text-gray-700 hover:text-[#903233]"><IoCartOutline /></Link>
-//                 <Link to="#" className="text-2xl text-gray-700 hover:text-[#903233]"><FaRegHeart /></Link>
-//                 <Link to="#" className="text-2xl text-gray-700 hover:text-[#903233]"><CiUser /></Link>
-//             </nav>
-//         </header>
-//     </div>
-//     <div className='lg:hidden'>
-//       {open?(
-//             <AiOutlineClose size={30} onClick={() => setOpen(false)} />
-//           ) :(
-//             <AiOutlineMenu size={30} onClick={() => setOpen(true)} />
-//           )}
-//     </div>
-//     <div className={`lg:hidden fixed top-14 left-0 w-full bg-blue-950 text-white transition-transform duration-300 ${
-//         open ? "translate-x-0" : "-translate-x-full"
-//       }`}>
-//     <nav className ="flex space-x-7 items-center">
-//                 {/* links */}
-//                 <Link to="/new/trends" className ="text-gray-700 hover:text-[#903233]">New Arrivals</Link>
-//                 <Link to="/Women/new/trendy/fashion" className ="text-gray-700 hover:text-[#903233]">Women</Link>
-//                 <Link to="/mens/section" className ="text-gray-700 hover:text-[#903233]">Men</Link>
-//                 <Link to="kids/wear/collection" className ="text-gray-700 hover:text-[#903233]">Kids</Link>
-//                 <Link to="/personal/care/products" className ="text-gray-700 hover:text-[#903233]">Personal Care</Link>
-//                 <Link to="/sale/new/collection" className ="text-gray-700 hover:text-[#903233]">Sale</Link>
-//                 <Link to="#" className="text-2xl text-gray-700 hover:text-[#903233]"><IoCartOutline /></Link>
-//                 <Link to="#" className="text-2xl text-gray-700 hover:text-[#903233]"><FaRegHeart /></Link>
-//                 <Link to="#" className="text-2xl text-gray-700 hover:text-[#903233]"><CiUser /></Link>
-//             </nav>
-//             </div>
-
-//     </div>
-
-//   )
-// }
-
-// export default Nav
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaRegHeart } from "react-icons/fa";
@@ -68,13 +6,14 @@ import { CiSearch } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
+
 const Nav = () => {
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
 
   return (
     <div className="fixed w-full border-b border-gray-200 bg-white z-50">
-      <marquee className="py-1 bg-[#903233] text-white">🔥 Flat 50% Off on All Products! Shop Now! 🛒</marquee>
+      <marquee className="py-1 bg-[#903233] text-white grid grid-cols-2"> Flat upto 50% Off on All Products! Shop Now!</marquee>
 
       <header className="flex justify-between items-center p-3 px-5">
         <h1 className="text-2xl md:text-3xl font-bold text-[#903233] cursor-pointer" onClick={() => navigate("/")}>

@@ -14,7 +14,8 @@ const Best = () => {
       <div className='lg:mx-20 mx-10'>
       <h1 className='lg:text-4xl text-3xl font-bold py-4'>Combos</h1>
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 '>
-      <div 
+      <div
+       data-aos="flip-up"
         style={{
           backgroundImage: "url(/girls/wool.jpeg)",
           backgroundSize: "cover",
@@ -26,6 +27,7 @@ const Best = () => {
         <span className='mt-30'>25% OFF<br/>Buy Now</span>
       </div>
       <div
+        data-aos="flip-up"
         style={{
           backgroundImage: "url(/girls/hat.jpeg)",
           backgroundSize: "cover",
@@ -36,7 +38,8 @@ const Best = () => {
       >
         <span className='mt-30'>50% OFF<br/>Buy Now</span>
       </div>
-      <div 
+      <div
+       data-aos="flip-up"
         style={{
           backgroundImage: "url(/girls/fashon.jpeg)",
           backgroundSize: "cover",

@@ -3,7 +3,7 @@ import React from "react";
 const HomeDecor = () => {
   return (
     <div className="">
-      <div className="mx-10 lg:mx-20 mt-4 ">
+      <div className="mx-10 lg:mx-20 mt-4 mb-14">
         <h2 className="text-4xl py-4 font-bold nav">Home Decore</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-2 gap-5">

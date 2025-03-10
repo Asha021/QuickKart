@@ -18,7 +18,7 @@ const Deal = () => {
     See more
   </button>
 </div>
-      <div className='grid lg:grid-cols-3 xl:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-4'>
+      <div className='grid lg:grid-cols-4 xl:grid-cols-5  sm:grid-cols-2  md:grid-cols-3  grid-cols-1 gap-4'>
         {data.map((item, index) => (
             <div key={index} className='p-4 border border-gray-200'>
                 <img src={item.img} alt='img' className='scaleImg' />

@@ -19,7 +19,7 @@ const TopOffer = () => {
   </button>
   </div>
       
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4'>
+      <div className='grid grid-cols-1  sm:grid-cols-2  md:grid-cols-3  lg:grid-cols-4 xl:grid-cols-6 gap-4'>
         {data.map((item, index) => (
             <div key={index} className='p-4 border border-gray-200 rounded-lg shadow-md'>
                 <img src={item.img} alt="img" className='w-full h-44 object-cover hover:scale-105 transition duration-300' />

@@ -29,8 +29,8 @@ const Nav = () => {
           <Link to="/personal/care/products" className="text-gray-700 hover:text-[#903233]">Personal Care</Link>
           {/* <Link to="/sale/new/collection" className="text-gray-700 hover:text-[#903233]">Sale</Link> */}
           <div className='reletive'>
-          <CiSearch size={24} className=' absolute p-1 text-gray-500' />
-          <input  type="text" className='bg-gray-200 indent-6 px-3' placeholder='search for Products..'/>
+          <CiSearch size={26} className=' absolute p-1 top-12 text-gray-500' />
+          <input  type="text" className='bg-gray-200 p-1 indent-4 px-3' placeholder='search for Products..'/>
           </div>
           <Link to="#" className="text-2xl text-gray-700 hover:text-[#903233]"><IoCartOutline /></Link>
           <Link to="#" className="text-2xl text-gray-700 hover:text-[#903233]"><FaRegHeart /></Link>
@@ -51,7 +51,7 @@ const Nav = () => {
           <Link to="/mens/section" className="hover:text-gray-300" onClick={() => setOpen(false)}>Men</Link>
           <Link to="/kids/wear/collection" className="hover:text-gray-300" onClick={() => setOpen(false)}>Kids</Link>
           <Link to="/personal/care/products" className="hover:text-gray-300" onClick={() => setOpen(false)}>Personal Care</Link>
-          <Link to="/sale/new/collection" className="hover:text-gray-300" onClick={() => setOpen(false)}>Sale</Link>
+          {/* <Link to="/sale/new/collection" className="hover:text-gray-300" onClick={() => setOpen(false)}>Sale</Link> */}
           <div className="flex space-x-5 text-2xl">
             <Link to="#" className="hover:text-gray-300"><IoCartOutline /></Link>
             <Link to="#" className="hover:text-gray-300"><FaRegHeart /></Link>

@@ -32,8 +32,8 @@ const Sec1 = () => {
       </div>
       <Women />
       <Men />
-      <HomeDecor />
       <Kids />
+      <HomeDecor />
     </div>
   );
 };

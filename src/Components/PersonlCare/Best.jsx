@@ -11,7 +11,7 @@ const Best = () => {
     return (
         <div className='bg-gray-100 flex justify-center items-center'>
             <div className="lg:mx-20 mx-10 w-full my-10  ">
-                <header className=" mb-7">
+                <header className=" mb-7 nav">
                     <h1 className="lg:text-4xl text-3xl  font-bold text-gray-800">Best Seller Products</h1>
                     <p className="text-lg text-gray-600 mt-2">Explore our products</p>
                 </header>

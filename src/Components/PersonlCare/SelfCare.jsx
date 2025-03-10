@@ -11,7 +11,7 @@ const SelftCare = () => {
     return (
         <div className='bg-gray-100 py-14 flex justify-center items-center'>
             <div className="lg:mx-20 w-full mx-10">
-                <header className="lg:mb-8 mb-4">
+                <header className="lg:mb-8 mb-4 nav">
                     <h1 className="lg:text-4xl text-3xl  font-bold mb-2">Skincare Routine</h1>
                     <p className="text-lg text-gray-600">Your daily guide to glowing skin</p>
                 </header>

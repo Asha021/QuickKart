@@ -13,7 +13,7 @@ const Hair = () => {
               
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 '>
                 <header className="text-center md:mt-20">
-                    <h1 className="lg:text-4xl text-3xl font-bold text-gray-800 pb-5">Hair Care Products</h1>
+                    <h1 className="lg:text-4xl text-3xl font-bold text-gray-800 pb-5 nav">Hair Care Products</h1>
                    
                 </header>
                     {data.map((item, index) => (

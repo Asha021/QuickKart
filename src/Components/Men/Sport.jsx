@@ -14,7 +14,7 @@ const Sport = () => {
     <div>
         <div>
       <div className='lg:mx-20 mx-10 mt-3 '>
-      <div className='md:flex md:justify-between items-center p-4'>
+      <div className='md:flex md:justify-between items-center p-4 nav'>
   <h1 className='font-bold lg:text-4xl text-3xl md:py-0 py-3'>Sports Wear</h1>
   <button className='hover:bg-red-900 hover:text-white text-lg rounded-xl border border-red-900 px-8 py-2 transition duration-300'>
     See more

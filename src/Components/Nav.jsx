@@ -12,7 +12,7 @@ const Nav = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="fixed w-full border-b border-gray-200 bg-white z-50">
+    <div className="fixed w-full border-b border-gray-200 nav bg-white z-50">
       <marquee className="py-1 bg-[#903233] text-white grid grid-cols-2"> Flat upto 50% Off on All Products! Shop Now!</marquee>
 
       <header className="flex justify-between items-center p-3 px-5">

@@ -22,11 +22,12 @@ const Women = () => {
   return (
     <div className=" ">
       <div className="lg:mx-20  mx-10 mt-4">
-        <h2 className="text-4xl py-4 font-bold mx-5">Women</h2>
+        <h2 className="text-4xl py-4 font-bold mx-5 nav">Women</h2>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 ">
           {data.map((key, index) => (
             <div key={index} className="w-full">
               <div
+                  data-aos="fade-right"
                 style={{
                   backgroundImage: `url(${key.img})`,
                   backgroundSize: "cover",

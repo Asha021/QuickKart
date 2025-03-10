@@ -13,8 +13,8 @@ const Boy = () => {
     <div>
       <div>
       <div className='lg:mx-20 mx-10 my-5 '>
-      <div className='md:flex md:justify-between items-center p-4'>
-  <h1 className='font-bold lg:text-4xl text-3xl md:py-0 py-3'>Best Sellars</h1>
+      <div className='md:flex md:justify-between items-center nav p-4'>
+  <h1 className='font-bold lg:text-4xl text-3xl md:py-0 py-3 '>Best Sellars</h1>
   <button className='hover:bg-red-900 hover:text-white text-lg rounded-xl border border-red-900 px-8 py-2 transition duration-300'>
     See more
   </button>

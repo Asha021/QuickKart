@@ -12,7 +12,7 @@ const Girls = () => {
   return (
     <div>
       <div className="lg:mx-20  mx-10 mt-4 mb-14">
-        <h2 className="text-4xl py-4 font-bold">Categories</h2>
+        <h2 className="text-4xl py-4 font-bold nav">Categories</h2>
         <div className="grid lg:grid-cols-4 gap-2 md:grid-cols-2 grid-cols-1 ">
           {data.map((key) => (
              <div>

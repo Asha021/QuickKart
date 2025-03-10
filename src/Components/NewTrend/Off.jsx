@@ -5,6 +5,7 @@ const Off = () => {
     <div className=' lg:mx-20 mx-10'>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-5 '>
         <div 
+        data-aos="zoom-in-up"
           style={{
             backgroundImage: "url(/decor/cusion.jpeg)",
             backgroundSize: "cover",
@@ -16,6 +17,7 @@ const Off = () => {
           <span>25% OFF<br/>Buy Now</span>
         </div>
         <div
+        data-aos="zoom-in-up"
           style={{
             backgroundImage: "url(/decor/first.jpeg)",
             backgroundSize: "cover",

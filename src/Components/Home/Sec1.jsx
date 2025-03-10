@@ -12,9 +12,9 @@ const Sec1 = () => {
           <img
             src="/a4-2.jpg"
             alt="img"
-            className="absolute top-0 left-0 w-full h-full  opacity-75"
+            className="absolute top-0 left-0 w-full h-full "
           />
-          <div  data-aos="fade-down" data-aos-duration="1500"  className="relative  p-10  mx-5 max-w-xl text-white space-y-5">
+          <div  data-aos="fade-down" data-aos-duration="1500"  className="relative nav  p-10  mx-5 max-w-xl text-white space-y-5">
             <h1 className="text-4xl  md:text-5xl lg:text-6xl font-bold leading-tight ">
               Your Style, Your Way
             </h1>

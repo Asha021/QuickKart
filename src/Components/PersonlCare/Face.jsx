@@ -13,7 +13,7 @@ const Face = () => {
               
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 '>
                 <header className="text-center md:mt-20">
-                    <h1 className="lg:text-4xl text-3xl font-bold text-gray-800  pb-5">Bath & Body Washes</h1>
+                    <h1 className="lg:text-4xl text-3xl font-bold text-gray-800 nav pb-5">Bath & Body Washes</h1>
                 </header>
                     {data.map((item, index) => (
                         <div key={index}  data-aos="flip-up" className='cursor-pointer overflow-hidden hover:shadow-gray-400 shadow-md '>

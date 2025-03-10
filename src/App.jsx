@@ -11,7 +11,6 @@ import Women from './Components/women/women'
 import Mens from './Components/Men/Mens'
 import Kids from './Components/KidsColl/kids'
 import Personal from './Components/PersonlCare/Personal'
-import Sale from './Components/Sale/Sale'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -30,7 +29,6 @@ function App() {
             <Route  path='/mens/section' element={<Mens />} />
             <Route  path='/kids/wear/collection' element={<Kids />} />
             <Route  path='/personal/care/products' element={<Personal />} />
-            <Route  path='/sale/new/collection' element={<Sale />} />
       </Routes>
       <Bottom />
     </>

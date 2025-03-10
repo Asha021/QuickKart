@@ -13,11 +13,11 @@ const SizeChart = () => {
 
   return (
     <div className='p-4 mx-10 lg:mx-20 sm:p-8'>
-      <h1 className='text-3xl sm:text-4xl font-bold mb-6 text-center sm:text-left'>Kids Clothes Size Chart</h1>
+      <h1 className='text-3xl sm:text-4xl font-bold mb-6 text-center sm:text-left nav'>Kids Clothes Size Chart</h1>
       <div className='overflow-x-auto'>
         <table className='w-full text-center border-collapse border border-gray-300 min-w-max'>
           <thead>
-            <tr className='bg-red-900 text-white'>
+            <tr className='bg-red-900 text-white nav'>
               <th className='border border-gray-300 p-2'>Age Group</th>
               <th className='border border-gray-300 p-2'>Height</th>
               <th className='border border-gray-300 p-2'>Chest</th>

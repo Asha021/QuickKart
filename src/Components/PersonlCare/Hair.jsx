@@ -2,9 +2,9 @@ import React from 'react';
 
 const Hair = () => {
     const data = [
-        { img: "https://images-na.ssl-images-amazon.com/images/I/41GGpuOBdLL.jpg", title: "Oiling", step: "1"},
-        { img: "https://www.newbeauty.com/wp-content/uploads/2022/03/hair-hero.png", title: "Cleansing", step: "2"},
-        { img: "http://www.vaibhavstores.in/storage/blog/19/featured-image.jpeg", title: "Conditioning", step: "3"},
+        { img: "/mhup/oil.jpeg", title: "Oiling", step: "1"},
+        { img: "/mhup/hair.jpeg", title: "Cleansing", step: "2"},
+        { img: "/mhup/conditnor.jpeg", title: "Conditioning", step: "3"},
     ];
 
     return (

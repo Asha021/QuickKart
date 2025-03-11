@@ -2,9 +2,9 @@ import React from 'react'
 
 const Face = () => {
     const data = [
-        { img: "https://i5.walmartimages.com/seo/Bath-Body-Works-Ultra-Shea-Body-Cream-Sun-Ripened-Raspberry-8-Ounce_f0ad0922-e935-4ee0-89ce-3eaf94e5d42d.b41c9e6b68932a1c10d73d050184ff00.png", title: "Cleansing", step: "1"},
-        { img: "https://img.freepik.com/premium-photo/collection-bath-body-products-including-bottle-brand-lily_902639-37018.jpg", title: "Moisturising", step: "2"},
-        { img: "https://s3.amazonaws.com/images.ecwid.com/images/58565678/2300617938.jpg", title: "Fragrence", step: "3"},
+        { img: "/mhup/toning.jpeg", title: "Cleansing", step: "1"},
+        { img: "/mhup/bodywash.jpeg", title: "Moisturising", step: "2"},
+        { img: "/mhup/perfume.jpeg", title: "Fragrence", step: "3"},
     ];
   return (
     <div className='py-10 bg-red-50 border-b border-gray-200  '>

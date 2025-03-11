@@ -14,7 +14,7 @@ const Mens = () => {
             alt="img"
             className="absolute top-0 left-0 w-full h-full "
           />
-          <div  data-aos="fade-down" data-aos-duration="1500"  className="relative nav p-10  mx-5 max-w-xl text-white space-y-5">
+          <div  data-aos="fade-down" data-aos-duration="1500"  className="relative nav p-10  mx-5 max-w-xl text-white space-y-4">
             <h1 className="text-3xl  md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight ">
             From Casual Cool to Classic Sharp 
             </h1>
@@ -22,7 +22,7 @@ const Mens = () => {
             Find Your Best Fit
             </h2>
             <div className="">
-            <button className="bg-red-800 lg:px-8 lg:py-4 px-6 py-3 rounded hover:border font-medium hover:bg-red-900 transition outline-none">
+            <button className="bg-red-800 lg:px-8 lg:py-4 px-6 py-3 border-none rounded hover:border font-medium hover:bg-red-900 transition outline-none">
   Shop Now
 </button>
 

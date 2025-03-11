@@ -19,11 +19,11 @@ const New = () => {
             <h1 className="text-3xl  md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight ">
             Take advantage of great deals
             </h1>
-            <h2 className="text-lg  md:text-2xl font-light">
+            <h2 className="text-lg   md:text-2xl font-light">
             On smartphones! & another Offers
             </h2>
             <div className="">
-              <button className="bg-red-800 lg:px-8 lg:py-4  px-6 py-3 rounded  hover:border font-medium hover:bg-red-900 transition">
+              <button className="bg-red-800  lg:px-8 lg:py-4  px-6 py-3 rounded  font-medium hover:bg-red-900 transition">
                 Shop Now
               </button>
               

@@ -15,14 +15,14 @@ const Sec1 = () => {
             className="absolute top-0 left-0 w-full h-full "
           />
           <div  data-aos="fade-down" data-aos-duration="1500"  className="relative nav  p-10  mx-5 max-w-xl text-white space-y-5">
-            <h1 className="text-4xl  md:text-5xl lg:text-6xl font-bold leading-tight ">
+            <h1 className="text-4xl   md:text-5xl lg:text-6xl font-bold leading-tight ">
               Your Style, Your Way
             </h1>
-            <h2 className="text-lg  md:text-2xl font-light">
+            <h2 className="text-lg   md:text-2xl font-light">
               Trendy Picks & Timeless Pieces <br /> Explore Now
             </h2>
             <div className="">
-              <button className="bg-red-800 lg:px-8 lg:py-4  px-6 py-3 rounded  hover:border font-medium hover:bg-red-900 transition">
+              <button className="bg-red-800   lg:px-8 lg:py-4  px-6 py-3 rounded  hover: font-medium hover:bg-red-900 transition">
                 Shop Now
               </button>
               

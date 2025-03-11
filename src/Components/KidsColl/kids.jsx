@@ -23,7 +23,7 @@ const kids = () => {
             Kids' Collection Inside! <br /> Explore Now
             </h2>
             <div className="">
-              <button className="bg-red-800 lg:px-8 lg:py-4  px-6 py-3 rounded  hover:border font-medium hover:bg-red-900 transition">
+              <button className="bg-red-800 lg:px-8 lg:py-4  px-6 py-3 rounded   font-medium hover:bg-red-900 transition">
                 Shop Now
               </button>
               

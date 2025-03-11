@@ -2,10 +2,10 @@ import React from 'react';
 
 const Best = () => {
     const bestSellers = [
-        { img: "/new/tshirt.jpeg", title: "Hair Growth Oil", price: 1200 },
-        { img: "/new/tshirt.jpeg", title: "Hydrating Shampoo", price: 900 },
-        { img: "/new/tshirt.jpeg", title: "Repair Conditioner", price: 1100 },
-        { img: "/new/tshirt.jpeg", title: "Scalp Serum", price: 1500 },
+        { img: "https://down-ph.img.susercontent.com/file/sg-11134201-23030-59blye3la8nv4c", title: "Hair Growth Oil", price: 1200 },
+        { img: "https://pngimg.com/uploads/shampoo/shampoo_PNG22.png", title: "Hydrating Shampoo", price: 900 },
+        { img: "/mhup/img1.jpeg", title: "Repair Conditioner", price: 1100 },
+        { img: "https://stylecaster.com/wp-content/uploads/2023/01/gro-ageless-daily-duo.jpg?resize=670", title: "Scalp Serum", price: 1500 },
     ];
 
     return (

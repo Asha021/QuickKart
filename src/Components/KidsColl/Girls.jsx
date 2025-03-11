@@ -2,12 +2,10 @@ import React from 'react'
 
 const Girls = () => {
     const data = [
-        {img:"/kid/child.jpeg", title:"Boys", price:11499},
-        {img:"/kid/child.jpeg", title:"Girls", price:42299},
-        {img:"/kid/child.jpeg", title:"Infant", price:21499},
-        {img:"/kid/child.jpeg", title:"Accessories", price:22499},
-        // {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Vivo-S20", price:11499},
-       
+        {img:"/kid2/img1.jpeg", title:"Boys", price:11499},
+        {img:"/kid2/gilr1.jpeg", title:"Girls", price:42299},
+        {img:"/kid2/infant.jpeg", title:"Infant", price:21499},
+        {img:"/acc.jpeg", title:"Accessories", price:22499},   
     ]
   return (
     <div>

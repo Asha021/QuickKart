@@ -1,14 +1,7 @@
 import React from 'react'
 
 const Best = () => {
-    const data = [
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Vivo", price:999},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Samsung", price:4299},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Oppo", price:1499},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Mi", price:2299},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Vivo-S20", price:499},
-       
-    ]
+   
   return (
     <div>
       <div className='lg:mx-20 mx-10'>
@@ -17,7 +10,7 @@ const Best = () => {
       <div
        data-aos="flip-up"
         style={{
-          backgroundImage: "url(/girls/wool.jpeg)",
+          backgroundImage: "url(/kidCombo/img1.jpeg)",
           backgroundSize: "cover",
           height: "300px",
           cursor: "pointer",
@@ -29,7 +22,7 @@ const Best = () => {
       <div
         data-aos="flip-up"
         style={{
-          backgroundImage: "url(/girls/hat.jpeg)",
+          backgroundImage: "url(/kidCombo/img2.jpeg)",
           backgroundSize: "cover",
           height: "300px",
           cursor: "pointer",
@@ -41,7 +34,7 @@ const Best = () => {
       <div
        data-aos="flip-up"
         style={{
-          backgroundImage: "url(/girls/fashon.jpeg)",
+          backgroundImage: "url(/kidCombo/img4.jpeg)",
           backgroundSize: "cover",
           height: "300px",
           cursor: "pointer",

@@ -2,11 +2,11 @@ import React from 'react'
 
 const Boy = () => {
     const data = [
-        {img:"/500pxPics/men.jpg", title:"Vivo", price:1499},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Samsung", price:499},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Oppo", price:2499},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Mi", price:1499},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Vivo-S20", price:3499},
+        {img:"/kidCombo/img3.jpeg",  price:1499},
+        {img:"/kid2/img4.jpeg", price:499},
+        {img:"/kid2/img5.jpeg", price:2499},
+        {img:"/kid2/img3.jpeg",  price:1499},
+        {img:"/kid2/img7.jpeg",  price:3499},
        
     ]
   return (
@@ -25,8 +25,6 @@ const Boy = () => {
             <div key={index} className='border  border-gray-200 p-4'>
                 <img src={item.img} alt="img" className='scaleImg ' />
                 <div className='text-center '>
-                {/* <div className='fle border'> */}
-                <h3>{item.title}</h3>
                 <strong className=' py-1'>₹{item.price}</strong><br />
                 <button className='bg-[#903233] text-white px-4 py-2 rounded hover:bg-[#7a2a2a]'>Buy Now</button>
                 {/* </div> */}

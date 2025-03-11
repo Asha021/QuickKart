@@ -8,7 +8,7 @@ const Sec1 = () => {
   return (
     <div>
       <div className="h-screen">
-        <div className="relative h-screen w-full flex items-center justify-start bg-black/60">
+        <div className="relative h-screen flex items-center justify-start bg-black/60">
           <img
             src="/a4-2.jpg"
             alt="img"

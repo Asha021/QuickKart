@@ -2,11 +2,11 @@ import React from 'react'
 
 const GirlSec = () => {
     const data = [
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Vivo", price:1499},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Samsung", price:499},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Oppo", price:2499},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Mi", price:1499},
-        {img:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/o/i/-original-imah4kfuzzxz6tvn.jpeg?q=70", title:"Vivo-S20", price:3499},
+        {img:"/kid2/girl3.jpeg",  price:1499},
+        {img:"/kid2/girl4.jpeg",  price:499},
+        {img:"/kid2/girl6.jpeg", price:2499},
+        {img:"/kid2/gilr1.jpeg", price:1499},
+        {img:"/kidCombo/img5.jpeg", price:3499},
        
     ]
   return (
@@ -26,7 +26,7 @@ const GirlSec = () => {
                 <img src={item.img} alt="img" className='scaleImg ' />
                 <div className='text-center '>
               
-                <h3>{item.title}</h3>
+                {/* <h3>{item.title}</h3> */}
                 <strong className=' py-1'>₹{item.price}</strong><br />
                 <button className='bg-[#903233] text-white px-4 py-2 rounded hover:bg-[#7a2a2a]'>Buy Now</button>
                 

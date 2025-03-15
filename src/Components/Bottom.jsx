@@ -1,8 +1,9 @@
 import React from "react";
 import { FaInstagramSquare } from "react-icons/fa"; //instagram icon
-import { FaFacebook } from "react-icons/fa";//facebook
+import { FaFacebook } from "react-icons/fa"; //facebook
 import { FaTwitter } from "react-icons/fa"; //twitter
-import { IoLogoYoutube } from "react-icons/io";//youtube
+import { IoLogoYoutube } from "react-icons/io"; //youtube
+import { FaRegCopyright } from "react-icons/fa6"; //copyryt
 const Bottom = () => {
   return (
     <div>
@@ -13,17 +14,26 @@ const Bottom = () => {
             <h3 className="text-xl font-bold mb-4 nav">About QuickKart</h3>
             <p className="text-sm leading-6">
               QuickKart is your one-stop place for the latest trends for men,
-              women, kids and personal Care Products. Shop now and enjoy exclusive offers!
+              women, kids and personal Care Products. Shop now and enjoy
+              exclusive offers!
             </p>
             <div className="flex gap-5 mt-3">
-              <i className="text-2xl cursor-pointer "><FaFacebook /></i>
-              <i className="text-2xl cursor-pointer "><FaInstagramSquare /></i>
-              <i className="text-2xl cursor-pointer "><FaTwitter /></i>
-              <i className="text-2xl cursor-pointer "><IoLogoYoutube /></i>
+              <i className="text-2xl cursor-pointer ">
+                <FaFacebook />
+              </i>
+              <i className="text-2xl cursor-pointer ">
+                <FaInstagramSquare />
+              </i>
+              <i className="text-2xl cursor-pointer ">
+                <FaTwitter />
+              </i>
+              <i className="text-2xl cursor-pointer ">
+                <IoLogoYoutube />
+              </i>
             </div>
           </div>
 
-            {/* Quick links */}
+          {/* Quick links */}
           <div>
             <h3 className="text-xl font-bold mb-4 nav">Quick Links</h3>
             <ul className="space-y-2">
@@ -54,7 +64,7 @@ const Bottom = () => {
               </li>
             </ul>
           </div>
-            {/* Contact section */}
+          {/* Contact section */}
           <div>
             <h3 className="text-xl font-bold mb-4 nav">Contact Us</h3>
             <p className="text-sm">Email: quick@quickkart.com</p>
@@ -62,9 +72,10 @@ const Bottom = () => {
             <p className="text-sm">Address: 123 Street, City, India</p>
           </div>
         </div>
-
-        <div className="text-center border-gray-700 border-t mt-3 pt-4 text-sm">
-          2025 QuickKart. All Rights Reserved.
+        {/* bottom copyryt */}
+        <div className="flex items-center justify-center text-center gap-1  border-gray-700 border-t mt-3 pt-4 text-sm">
+          <FaRegCopyright className="text-base" /> 2025 QuickKart. All Rights
+          Reserved.
         </div>
       </div>
     </div>

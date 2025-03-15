@@ -13,14 +13,19 @@ const New = () => {
           <img
             src="/hat.jpeg"
             alt="img"
-            className="absolute top-0 left-0 w-full h-full "
+            className="absolute sm:block hidden top-0 left-0 w-full h-full "
+          />
+            <img
+            src="/500pxPics/girl3.jpg"
+            alt="img"
+            className="absolute sm:hidden top-0 left-0 w-full h-full "
           />
           <div  data-aos="fade-down" data-aos-duration="1500"  className="relative nav  p-10  mx-5 max-w-xl text-white space-y-5">
             <h1 className="text-3xl  md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight ">
-            Take advantage of great deals
+            New Arrivals
             </h1>
             <h2 className="text-lg   md:text-2xl font-light">
-            On smartphones! & another Offers
+            Explore Now
             </h2>
             <div className="">
               <button className="bg-red-800  lg:px-8 lg:py-4  px-6 py-3 rounded  font-medium hover:bg-red-900 transition">

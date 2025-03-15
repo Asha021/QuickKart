@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
 body{
     font-family: "Marck Script", cursive;
     font-weight: 400;
@@ -9,14 +10,16 @@ body{
 .nav{
     font-family: "Agdasima", sans-serif;
 }
+.cur{
+    font-family: "Marck Script", cursive;
+}
+
 
 @layer components{
-    /* .fonts{
-        @apply font- "Libre Franklin", sans-serif;
-    } */
     .but1{
        @apply p-2 pb-5  bg-red-900 mt-10 hover:bg-red-950 border;
     }
+    
     .but2{
         @apply p-2 px-4 hover:shadow-lg shadow-gray-500  rounded  text-white bg-blue-500 hover:bg-blue-700;
     }
@@ -24,6 +27,6 @@ body{
         @apply p-2 md:py-3 md:font-semibold bg-red-900 hover:bg-red-950 border;
     }
 }   .scaleImg{
-    @apply  h-50  hover:scale-105 transform w-full ;
+    @apply   hover:scale-105 transform w-full ;
     /* @apply w-32 hover:scale-105 h-44 object-cover items-center text-center justify-center flex; */
 }

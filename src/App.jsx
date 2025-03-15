@@ -13,6 +13,7 @@ import Kids from './Components/KidsColl/kids'
 import Personal from './Components/PersonlCare/Personal'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Home from './Components/Cloths/IndianWear/Home'
 
 function App() {
   useEffect(()=>{
@@ -29,6 +30,7 @@ function App() {
             <Route  path='/mens/section' element={<Mens />} />
             <Route  path='/kids/wear/collection' element={<Kids />} />
             <Route  path='/personal/care/products' element={<Personal />} />
+            <Route  path='/traditional/wear/cloths' element={<Home />} />
       </Routes>
       <Bottom />
     </>

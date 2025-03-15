@@ -2,8 +2,8 @@ import React from 'react'
 
 const Offer = () => {
   return (
-    <div className='lg:mx-20 mx-10'>
-      <h1 className='lg:text-4xl text-3xl font-bold py-4 nav'>Best Offers</h1>
+    <div className='lg:mx-20 mx-5'>
+      <h1 className='lg:text-4xl text-3xl font-bold md:py-4 nav'>Best Offers</h1>
     <div  className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 '>
       <div 
       data-aos="flip-down"

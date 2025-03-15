@@ -9,11 +9,16 @@ const women = () => {
   return (
     <div>
        <div className="h-screen">
-        <div className="relative h-screen w-full flex items-center justify-start ">
+        <div className="relative h-screen w-full flex items-center justify-start bg-black">
           <img
             src="/a2-1.jpg"
             alt="img"
-            className="absolute top-0 left-0 w-full h-full "
+            className="absolute hidden sm:block top-0 left-0 w-full h-full opacity-90 "
+          />
+          <img
+            src="/500pxPics/girl2.jpg"
+            alt="img"
+            className="absolute top-0 sm:hidden left-0 w-full h-full opacity-90 "
           />
           <div  data-aos="fade-down" data-aos-duration="1500"  className="relative nav p-10  mx-5 max-w-xl text-white space-y-5">
             <h1 className="text-3xl  md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight ">

@@ -13,7 +13,11 @@ import Kids from './Components/KidsColl/kids'
 import Personal from './Components/PersonlCare/Personal'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import Home from './Components/Cloths/IndianWear/Home'
+import Home from './Components/Cloths/DayWear/IndianWear/Home'
+import Western from './Components/Cloths/DayWear/Western/Western'
+import Dress from './Components/Cloths/DayWear/dresses/Dress'
+import Saree from './Components/Cloths/DayWear/saree/Saree'
+import Kurti from './Components/Cloths/DayWear/kurti/Kurti'
 
 function App() {
   useEffect(()=>{
@@ -31,6 +35,10 @@ function App() {
             <Route  path='/kids/wear/collection' element={<Kids />} />
             <Route  path='/personal/care/products' element={<Personal />} />
             <Route  path='/traditional/wear/cloths' element={<Home />} />
+            <Route  path='/western/wear/cloths' element={<Western />} />
+            <Route  path='/trendy/dresses' element={<Dress />} />
+            <Route  path='/shop/saree' element={<Saree />} />
+            <Route  path='/trendy/kurti/kurta-sets' element={<Kurti />} />
       </Routes>
       <Bottom />
     </>

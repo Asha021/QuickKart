@@ -1,6 +1,6 @@
 import React from 'react'
-import Men from '../../Home/Men'
-import PriceNav from './PriceNav'
+// import PriceNav from './PriceNav'
+import ClothCompo from './ClothCompo'
 
 const Home = () => {
   return (
@@ -24,8 +24,8 @@ const Home = () => {
     </div>
   </div>
 </div>
-    <PriceNav />
-    {/* <SizeNav /> */}
+    {/* <PriceNav /> */}
+    <ClothCompo />
     </div>
   )
 }

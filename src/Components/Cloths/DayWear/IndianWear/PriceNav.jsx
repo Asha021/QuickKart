@@ -11,9 +11,10 @@ const PriceNav = () => {
   const [colors,setColor] = useState(false);
 
   return (
-    <div className='ml-10'>
+    <div className='mx-10 w-64 '>
       {/* Price Filter */}
-      <div className="w-64 px-5 py-2 border-r  border-gray-300">
+      <h1 className='px-5 text-2xl py-5  font-bold'>Categories</h1>
+      <div className="px-5 py-4 border-t  border-gray-200">
         <h2 onClick={() => setShowPrices(!showPrices)} className="text-xl font-bold mb-4 flex items-center cursor-pointer">
           Filter by Price <FaAngleDown />
         </h2>
@@ -29,7 +30,7 @@ const PriceNav = () => {
       </div>
 
       {/* Size Filter */}
-      <div className="w-64  px-5 py-2 border-r border-gray-300 ">
+      <div className="w-64  px-5 py-2 border-t border-gray-200 ">
         <h2 onClick={() => setShowSizes(!showSizes)} className="text-xl font-bold mb-4 flex items-center cursor-pointer">
           Filter by Size <FaAngleDown />
         </h2>
@@ -45,8 +46,8 @@ const PriceNav = () => {
       </div>
 
        {/* Color Filter*/}
-       <div className="w-64  px-5 py-2 border-r border-gray-300 ">
-        <h2 onClick={() => setColor(!colors)} className="text-xl font-bold mb-4 flex items-center cursor-pointer">
+       <div className="w-64  px-5 py-2 border-t border-gray-200 ">
+        <h2 onClick={() => setColor(!colors)} className=" text-xl font-bold mb-4 flex items-center cursor-pointer">
           Filter by Color <FaAngleDown />
         </h2>
         {colors && (

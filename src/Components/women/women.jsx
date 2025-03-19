@@ -4,8 +4,10 @@ import Jwellary from './Jwellary'
 import BootomWear from './BootomWear'
 import Offer from './Offer'
 import Slide from '../NewTrend/slide'
+import { useNavigate } from 'react-router-dom'
 
 const women = () => {
+  const navigate = useNavigate()
   return (
     <div>
        <div className="h-screen">
@@ -13,14 +15,14 @@ const women = () => {
           <img
             src="/a2-1.jpg"
             alt="img"
-            className="absolute hidden sm:block top-0 left-0 w-full h-full opacity-90 "
+            className="absolute hidden sm:block top-0 left-0 w-full h-full opacity-80 "
           />
           <img
-            src="/500pxPics/girl2.jpg"
+            src="/cloth/indian/img8.jpeg"
             alt="img"
-            className="absolute top-0 sm:hidden left-0 w-full h-full opacity-90 "
+            className="absolute top-0 sm:hidden left-0 w-full h-full opacity-80 "
           />
-          <div  data-aos="fade-down" data-aos-duration="1500"  className="relative nav p-10  mx-5 max-w-xl text-white space-y-5">
+          <div  data-aos="fade-down" data-aos-duration="1500"  className="relative nav p-10 pt-30 mx-5 max-w-xl text-white space-y-5">
             <h1 className="text-3xl  md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight ">
             Empower Your Style 
             </h1>
@@ -28,7 +30,7 @@ const women = () => {
             Fashion for Every Woman | Exoplor fashion
             </h2>
             <div className="">
-              <button className="bg-red-800 lg:px-8 lg:py-4  px-6 py-3 rounded  font-medium hover:bg-red-900 transition">
+              <button    onClick={()=>navigate("/western/wear/cloths")} className="bg-red-800 lg:px-8 lg:py-4  px-6 py-3 rounded  font-medium hover:bg-red-900 transition">
                 Shop Now
               </button>
               

@@ -18,6 +18,11 @@ import Western from './Components/Cloths/DayWear/Western/Western'
 import Dress from './Components/Cloths/DayWear/dresses/Dress'
 import Saree from './Components/Cloths/DayWear/saree/Saree'
 import Kurti from './Components/Cloths/DayWear/kurti/Kurti'
+import Dress1Info from './Components/Cloths/DayWear/IndianWear/Dress1Info'
+import Cart from './Components/Cloths/DayWear/IndianWear/Cart'
+import ReletedPro from './Components/Cloths/DayWear/IndianWear/ReletedPro'
+import Shorts from './Components/Cloths/NIghtWear/Shorts'
+// import Dress from './Components/Cloths/DayWear/dresses/Dress'
 
 function App() {
   useEffect(()=>{
@@ -39,6 +44,11 @@ function App() {
             <Route  path='/trendy/dresses' element={<Dress />} />
             <Route  path='/shop/saree' element={<Saree />} />
             <Route  path='/trendy/kurti/kurta-sets' element={<Kurti />} />
+            <Route  path='/shop/now' element={<Dress1Info />} />
+            <Route  path='/cart/items' element={<Cart />} />
+            <Route  path='/more/releted/products' element={<ReletedPro />} />
+            <Route  path='/nightware/shorts' element={<Shorts />} />
+            {/* <Route  path='/dresses/buy/now' element={<Dress />} /> */}
       </Routes>
       <Bottom />
     </>

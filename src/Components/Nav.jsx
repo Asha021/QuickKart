@@ -10,6 +10,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Nav = () => {
   const navigate = useNavigate();
+  const cartItems = JSON.parse(localStorage.getItem("cart")) || []; 
 
   const [menu, setMenu] = useState(false);
   const [open, setOpen] = useState(false);
@@ -54,7 +55,7 @@ const Nav = () => {
          
             <h2 className='nav font-bold pb-2 '>NIghtWear</h2>
             <ul className='cur text-gray-700 '> 
-            <Link  className='hover:underline' to="#">Shorts</Link><br />
+            <Link  className='hover:underline' to="/nightware/shorts">Shorts</Link><br />
             <Link  className='hover:underline' to="#">Maxi</Link><br />
             <Link  className='hover:underline' to="#">T-shirt Pajama</Link><br />
             <Link  className='hover:underline' to="#">Night Dress</Link><br />
@@ -100,8 +101,19 @@ const Nav = () => {
           <CiSearch size={26} className=' absolute p-1 top-12 text-gray-500' />
           <input  type="text" className='bg-gray-200 p-1 indent-4 px-3' placeholder='search for Products..'/>
           </div>
-          <Link to="#" className="text-2xl text-gray-700 hover:text-[#903233]"><IoCartOutline /></Link>
-          <Link to="#" className="text-2xl text-gray-700 hover:text-[#903233]"><FaRegHeart /></Link>
+          
+          
+          <Link to="/cart/items" className="relative text-2xl text-gray-700 hover:text-[#903233]">
+            {/* Cart Count Badge */}
+            {cartItems.length > 0 && (
+                <span className="absolute -right-1 -top-2 bg-red-500 text-white text-xs px-1 rounded-full">
+                    {cartItems.length}
+                </span>
+            )}
+            <IoCartOutline />
+        </Link>
+
+          {/* <Link to="#" className="text-2xl text-gray-700 hover:text-[#903233]"><FaRegHeart /></Link> */}
           {/* <Link to="#" className="text-2xl text-gray-700 hover:text-[#903233]"><CiUser /></Link> */}
         </nav>
 
@@ -165,17 +177,7 @@ const Nav = () => {
         )}
          </div>
         <button className="  hover:text-[#903233] border-t border-gray-100 text-start pl-2 py-3">Login/Register</button>
-          {/* <Link to="/new/trends" className="hover:text-gray-300" onClick={() => setOpen(false)}>New Arrivals</Link>
-          <Link to="/Women/new/trendy/fashion" className="hover:text-gray-300" onClick={() => setOpen(false)}>Women</Link>
-          <Link to="/mens/section" className="hover:text-gray-300" onClick={() => setOpen(false)}>Men</Link>
-          <Link to="/kids/wear/collection" className="hover:text-gray-300" onClick={() => setOpen(false)}>Kids</Link>
-          <Link to="/personal/care/products" className="hover:text-gray-300" onClick={() => setOpen(false)}>Personal Care</Link> */}
-          {/* <Link to="/sale/new/collection" className="hover:text-gray-300" onClick={() => setOpen(false)}>Sale</Link> */}
-          {/* <div className="flex space-x-5 text-2xl">
-            <Link to="#" className="hover:text-gray-300"><IoCartOutline /></Link>
-            <Link to="#" className="hover:text-gray-300"><FaRegHeart /></Link>
-            <Link to="#" className="hover:text-gray-300"><CiUser /></Link>
-          </div> */}
+        
         </nav>
       </div>
     </div>

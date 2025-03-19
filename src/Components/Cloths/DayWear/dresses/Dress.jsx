@@ -1,86 +1,76 @@
-import React from 'react'
+import React,{useState} from 'react'
 import PriceNav from '../IndianWear/PriceNav';
+import { useNavigate } from 'react-router-dom';
+
 const Dress = () => {
-    const data = [
-        { img: "/girlBott/dress2.jpg", title: "Short Dress", price: 299 },
-        { img: "/500pxPics/girl.jpg", title: "BodyCon Dress", price: 999 },
-        { img: "/girlBott/dress8.jpeg", title: "Floral Dress", price: 599 },
-        { img: "/girlBott/dress2.jpg", title: "Short Dress", price: 299 },
-        { img: "/girlBott/dress3.jpg", title: "Skirts", price: 1599 },
-        { img: "/girlBott/dress4.jpg", title: "Shirts", price: 699 },
-        { img: "/girlBott/dress5.jpg", title: "Wool", price: 1999 },
-        { img: "/girlBott/dress6.jpg", title: "Trending Cloths", price: 899 },
-        { img: "/500pxPics/girl.jpg", title: "BodyCon Dress", price: 999 },
-        { img: "/girlBott/dress8.jpeg", title: "Floral Dress", price: 599 },
+       const [filteredData, setFilteredData] = useState([]);
+        const navigate = useNavigate()
+       
+      const data = [
+        { img:  "/cloth/western/img5.jpeg", title: "BodyCon Dress",sub:"A stylish and comfortable bodycon dress perfect for any occasion.", price: 999,navigate:"/shop/now" ,colors: ["pink", "yellow", "black"], 
+          sizes: ["XS","S","M", "L", "XL"]},
+        { img: "/cloth/western/img2.jpeg", title: "Floral Dress", price: 599 ,navigate:"/shop/now" ,colors: [,"Red", "yellow", "black"], 
+          sizes: ["M", "L", "XL"] },
+        { img: "/cloth/western/img3.jpeg", title: "Short Dress", price: 299 ,navigate:"/shop/now" ,colors: ["Purple", "yellow", "black"], 
+          sizes: ["S","M", "L", "XL"] },
+        { img: "/cloth/western/img6.jpeg", title: "Skirts", price: 1599,navigate:"/shop/now" ,colors: ["Orange", "yellow", "black"], 
+          sizes: ["M", "L", "XL"]  },
+        { img: "/cloth/western/img3.jpeg", title: "Shirts", price: 699,navigate:"/shop/now" ,colors: ["pink", "yellow", "black","Red"], 
+          sizes: ["S","M", "L", "XL"]  },
+        { img:  "/cloth/western/img5.jpeg", title: "Wool", price: 1999 ,navigate:"/shop/now" ,colors: ["silver", "yellow", "black"], 
+          sizes: ["S","M", "L", "XL"] },
+        { img: "/cloth/western/img6.jpeg", title: "Trending Cloths", price: 899,navigate:"/shop/now" ,colors: ["pink", "yellow", "black"], 
+          sizes: ["XS","S","M", "L", "XL"]  },
+        { img: "/cloth/western/img3.jpeg", title: "BodyCon Dress", price: 999 ,navigate:"/shop/now" ,colors: ["red", "yellow", "black"], 
+          sizes: ["M", "L", "XL"] },
+        { img: "/cloth/western/img2.jpeg", title: "Floral Dress", price: 599 ,navigate:"/shop/now" ,colors: ["pink", "yellow", "black"], 
+          sizes: ["XS","S","M", "L", "XL"] },
+        { img:  "/cloth/western/img5.jpeg", title: "Short Dress", price: 299 ,navigate:"/shop/now" ,colors: ["pink", "yellow", "black"], 
+          sizes: ["M", "L", "XL"] },
       ];
   return (
     <div>
           <div className="relative">
-  <div className="relative w-full h-[300px] ">
+  <div className="relative w-full h-[300px] bg-black">
     <img
-      src="/270px/img2.jpeg"
-      alt="img"
-      className="absolute sm:block hidden top-0 left-0 w-full h-full object-cover"
+          src="/cloth/head/img2.jpeg"
+          alt="img"
+      className="absolute sm:block hidden top-0 left-0 w-full h-full object-cover opacity-80"
     />
     <img
-      src="/500pxPics/men6.jpg"
+      src="/cloth/western/img5.jpeg"
       alt="img"
-      className="absolute sm:hidden top-0 left-0 w-full h-full object-cover"
+      className="absolute sm:hidden top-0 left-0 w-full h-full object-cover opacity-80"
     />
     <div className="text-white top-30 max-w-lg absolute mx-10 z-10 p-5 rounded-lg">
       <h2 className="text-lg md:text-3xl font-bold">
-        Wardrobe Essentials: Western Clothing Must-Haves <br /> Explore Now
+      Stylish Dresses for Every Occasion
       </h2>
     </div>
   </div>
 </div>
-<div className="flex">
-      <PriceNav />
+ <div>
+ <div className="lg:flex">
+      <PriceNav data={data} setFilteredData={setFilteredData}/>
       {/* <Link></Link> */}
       <div className="mx-5  my-8 mt-2">
         <div className="flex justify-between pb-1">
-          <h1 className=" font-bold text-3xl py-1 pb-4 ">Western Wear</h1>
+          <h1 className=" font-bold text-2xl lg:text-3xl py-1 pb-4 ">Dresses</h1>
 
-          <button className="hover:bg-red-900 hover:text-white text-lg rounded-xl border border-red-900 px-8  transition duration-300">
-            See more
-          </button>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-4">
-          {data.map((item, index) => (
-            <div
-              onClick={() => useNavigate("")}
-              key={index}
-              className="border cursor-pointer  border-gray-200 p-4"
-            >
-              <img
-                data-aos="zoom-out"
-                src={item.img}
-                alt="img"
-                className="scaleImg "
-              />
-              <div className="text-center ">
-                {/* <div className='fle border'> */}
-                <div className="flex text-center items-center justify-center gap-1 py-2">
-                  <h3 className="rounded-full border bg-red-600 items-center text-center w-3 h-3">
-                    {item.color}
-                  </h3>
-                  <h3 className="rounded-full border bg-green-600 items-center text-center w-3 h-3">
-                    {item.color}
-                  </h3>
-                  <h3 className="rounded-full border bg-yellow-600 items-center text-center w-3 h-3">
-                    {item.color}
-                  </h3>
-                </div>
-                <h3>{item.title}</h3>
-                <strong className="text-red-700 py-1">₹{item.price}</strong>
-                <br />
-              </div>
+        <div className="grid grid-cols-2 md:grid-cols-3  gap-4">
+        {(filteredData.length > 0 ? filteredData : data).map((item, index) => (
+            <div key={index} onClick={() => navigate(item.navigate, { state: item })} className="border text-center border-gray-200 cursor-pointer p-4">
+              <img src={item.img} alt="img" className="scaleImg " />
+              <h3 className="pt-1">{item.title}</h3>
+              <strong className="text-red-700 py-1">₹{item.price}</strong>
             </div>
           ))}
         </div>
       </div>
     </div>
+ </div>
     </div>
   )
 }

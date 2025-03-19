@@ -1,13 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Off = () => {
+  const navigate = useNavigate()
   return (
-    <div className=' lg:mx-20 mx-10'>
+    <div className=' lg:mx-20 mx-5 sm:mx-10'>
       <div className='grid grid-cols-1  sm:grid-cols-2 gap-5 '>
         <div 
+        onClick={()=>navigate("/trendy/dresses")}
         data-aos="zoom-in-up"
           style={{
-            backgroundImage: "url(/decor/cusion.jpeg)",
+            backgroundImage: "url(/cloth/western/img1.jpeg)",
             backgroundSize: "cover",
             height: "300px",
             cursor: "pointer",
@@ -17,9 +20,10 @@ const Off = () => {
           <span>25% OFF<br/>Buy Now</span>
         </div>
         <div
+        onClick={()=>navigate("/trendy/dresses")}
         data-aos="zoom-in-up"
           style={{
-            backgroundImage: "url(/decor/first.jpeg)",
+            backgroundImage: "url(/cloth/western/img3.jpeg)",
             backgroundSize: "cover",
             height: "300px",
             cursor: "pointer",

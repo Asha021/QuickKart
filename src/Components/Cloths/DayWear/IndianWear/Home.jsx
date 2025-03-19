@@ -6,19 +6,19 @@ const Home = () => {
   return (
     <div>
      <div className="relative">
-  <div className="relative w-full h-[300px] ">
+  <div className="relative  w-full h-[300px] bg-black">
     <img
-      src="/270px/img2.jpeg"
+      src="/cloth/head/img1.jpeg"
       alt="img"
-      className="absolute sm:block hidden top-0 left-0 w-full h-full object-cover"
+      className="absolute hidden sm:block top-0 left-0 h-full object-cover opacity-70"
     />
     <img
-      src="/500pxPics/men6.jpg"
+      src="/cloth/indian/img2.jpeg"
       alt="img"
-      className="absolute sm:hidden top-0 left-0 w-full h-full object-cover"
+      className="absolute sm:hidden top-0 left-0 w-full h-full object-cover opacity-70"
     />
     <div className="text-white top-30 max-w-lg absolute mx-10 z-10 p-5 rounded-lg">
-      <h2 className="text-lg md:text-3xl font-bold">
+      <h2 className="text-2xl md:text-4xl font-bold">
         Traditional Indian Wear for Every Occasion <br /> Explore Now
       </h2>
     </div>

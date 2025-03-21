@@ -22,6 +22,10 @@ import Dress1Info from './Components/Cloths/DayWear/IndianWear/Dress1Info'
 import Cart from './Components/Cloths/DayWear/IndianWear/Cart'
 import ReletedPro from './Components/Cloths/DayWear/IndianWear/ReletedPro'
 import Shorts from './Components/Cloths/NIghtWear/Shorts'
+import Login from './Components/Form/Login'
+import SignUp from './Components/Form/SignUp'
+import SignIn from './Components/Form/SignIn'
+
 // import Dress from './Components/Cloths/DayWear/dresses/Dress'
 
 function App() {
@@ -48,6 +52,9 @@ function App() {
             <Route  path='/cart/items' element={<Cart />} />
             <Route  path='/more/releted/products' element={<ReletedPro />} />
             <Route  path='/nightware/shorts' element={<Shorts />} />
+            <Route  path='/form' element={<Login />} />
+            <Route  path='/signup' element={<SignUp />} />
+            <Route  path='/signin' element={<SignIn />} />
             {/* <Route  path='/dresses/buy/now' element={<Dress />} /> */}
       </Routes>
       <Bottom />

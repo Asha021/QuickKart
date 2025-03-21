@@ -53,12 +53,12 @@ const Cart = () => {
                     <p className="text-gray-600">
                       {item.sub || "No description available"}
                     </p>
-                    <strong className="text-red-600">₹{item.price}</strong>
+                    <strong className="text-[#903233]">₹{item.price}</strong>
                   </div>
                 </div>
                 <button
                   onClick={() => removeItem(index)}
-                  className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition"
+                  className="bg-red-700 text-white px-4 py-2 rounded-lg hover:bg-[#903233] transition"
                 >
                   Remove
                 </button>

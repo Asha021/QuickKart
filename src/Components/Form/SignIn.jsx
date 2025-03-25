@@ -42,13 +42,14 @@ const SignIn = () => {
     setError({});
     navigate("/");
     localStorage.setItem("userName", name);
+    localStorage.setItem("mail", mail);
     console.log("succesfull signin", mail, pass);
   };
 
   return (
     <div>
       {/* <h2 className="text-2xl pt-20 font-bold mb-4">Welcome {userName ? userName : "User"}!</h2> */}
-      <div className="flex justify-center items-center min-h-screen bg-gray-100 py-10">
+      <div className="flex justify-center items-center min-h-screen bg-gray-100 pt-24 py-10">
         <div className="flex bg-white shadow-lg rounded-2xl overflow-hidden max-w-4xl">
           <img
             data-aos="fade-right"
@@ -63,7 +64,7 @@ const SignIn = () => {
             <form onSubmit={handleSubmit} className="space-y-4  w-full">
               <div>
                 <label htmlFor="email" className="block text-gray-700">
-                  Email
+                  Email <i className="text-red-500 font-bold">*</i>
                 </label>
                 <input
                   id="email"
@@ -79,17 +80,25 @@ const SignIn = () => {
               </div>
               <div>
                 <label htmlFor="pass" className="block text-gray-700">
-                  Password
+                  Password<i className="text-red-500 font-bold">*</i>
                 </label>
-                <input
+              <div className="border flex rounded items-center relative focus-within:ring-2 focus-within:ring-blue-500">
+              <input
                   id="pass"
                   type={show?"text":"password"}
                   name="password"
                   value={pass}
                   onChange={(e) => setPass(e.target.value)}
-                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="w-full  px-4 py-2  focus:outline-none "
                 />
-                {error.pass && (
+                
+          
+                <span onClick={() => setShow(!show)} className="px-3">
+                  {show ? <FaEye /> : <FaEyeSlash />}{" "}
+                </span>
+              
+              </div>
+              {error.pass && (
                   <p className="text-red-700 text-sm">{error.pass}</p>
                 )}
               </div>
@@ -99,11 +108,7 @@ const SignIn = () => {
               >
                 Submit
               </button>
-              <div onClick={() => setShow(!show)}>
-                <span className="position absolute top-85 right-83">
-                  {show ? <FaEye /> : <FaEyeSlash />}{" "}
-                </span>
-              </div>
+              
             </form>
             <p className="text-center text-gray-600 mt-4">
               Don't have an account?{" "}
@@ -111,6 +116,11 @@ const SignIn = () => {
                 Sign Up
               </Link>
             </p>
+            {/* <div className="w-full flex justify-end">
+              <Link to="/forgot-password" className="text-blue-500 text-sm hover:underline">
+                Forgot Password?
+              </Link>
+            </div> */}
           </div>
         </div>
       </div>

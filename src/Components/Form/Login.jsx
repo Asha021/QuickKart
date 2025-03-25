@@ -22,8 +22,8 @@ const Login = () => {
       <button
         onClick={() => navigate("/signin")}
         onMouseEnter={() => setShowPopup(true)}
-        onMouseLeave={() => setShowPopup(false)}
-        className="flex items-center gap-2 border cursor-pointer border-gray-200 hover:border-[#903233] px-4 py-2 rounded-md"
+        // onMouseLeave={() => setShowPopup(false)}
+        className="flex items-center w-full gap-2 border cursor-pointer border-gray-200 hover:border-[#903233] px-4 py-2 lg:rounded-md"
       >
         <FaUserCircle size={24} color="#903233" className="bg-white" />
         <span>{userName ? userName : "Login"}</span>
@@ -31,7 +31,7 @@ const Login = () => {
 
       {showPopup && (
         <div
-          className="absolute top-15 right-0 bg-white shadow-md rounded-md p-4 w-52"
+          className="absolute top-15 right-0 bg-white shadow-md rounded-md p-4 w-auto lg:w-52"
           onMouseEnter={() => setShowPopup(true)}
           onMouseLeave={() => setShowPopup(false)}
         >
@@ -46,37 +46,37 @@ const Login = () => {
             <li className="flex items-center gap-2">
               {" "}
               <FaUserCircle size={18} color="#903233" className="bg-white" />
-              <a href="/profile" className="hover:text-blue-500">
+              <Link to="/profile/page" className="hover:text-blue-500">
                 My Profile
-              </a>
+              </Link>
             </li>
             <li className="flex items-center gap-2">
               {" "}
               <FaAddressCard size={18} color="#903233" className="bg-white" />
-              <a href="/profile" className="hover:text-blue-500">
+              <Link to="/user/address" className="hover:text-blue-500">
                 Address
-              </a>
+              </Link>
             </li>
             <li className="flex items-center gap-2">
               {" "}
               <IoNotifications size={18} color="#903233" className="bg-white" />
-              <a href="/profile" className="hover:text-blue-500">
+              <Link to="/notifications" className="hover:text-blue-500">
                 Notification
-              </a>
+              </Link>
             </li>
             <li className="flex items-center gap-2">
               {" "}
               <BsBorderStyle size={18} color="#903233" className="bg-white" />
-              <a href="/profile" className="hover:text-blue-500">
+              <Link to="/orders" className="hover:text-blue-500">
                 Orders
-              </a>
+              </Link>
             </li>
             <li className="flex items-center gap-2">
               {" "}
               <IoMdHeart size={18} color="#903233" className="bg-white" />
-              <a href="/profile" className="hover:text-blue-500">
+              <Link to="/wishlist/items" className="hover:text-blue-500">
                 Whishlist
-              </a>
+              </Link>
             </li>
 
             {userName && (

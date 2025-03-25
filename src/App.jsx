@@ -25,6 +25,11 @@ import Shorts from './Components/Cloths/NIghtWear/Shorts'
 import Login from './Components/Form/Login'
 import SignUp from './Components/Form/SignUp'
 import SignIn from './Components/Form/SignIn'
+import Profile from './Components/Form/Profile'
+import Address from './Components/Form/Address'
+import Wishlist from './Components/Form/Wishlist'
+import Orders from './Components/Form/Orders'
+import Notifiaction from './Components/Form/Notifiaction'
 
 // import Dress from './Components/Cloths/DayWear/dresses/Dress'
 
@@ -55,7 +60,12 @@ function App() {
             <Route  path='/form' element={<Login />} />
             <Route  path='/signup' element={<SignUp />} />
             <Route  path='/signin' element={<SignIn />} />
-            {/* <Route  path='/dresses/buy/now' element={<Dress />} /> */}
+            <Route  path='/profile/page' element={<Profile />} />
+            <Route  path='/user/address' element={<Address />} />
+            <Route  path='/wishlist/items' element={<Wishlist />} />
+            <Route  path='/orders' element={<Orders />} />
+            <Route  path='/notifications' element={<Notifiaction />} />
+     
       </Routes>
       <Bottom />
     </>

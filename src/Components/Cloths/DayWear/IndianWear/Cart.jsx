@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-
+import { ImCross } from "react-icons/im";
 const Cart = () => {
   const location = useLocation();
   const newItem = location.state || null;
@@ -31,7 +31,7 @@ const Cart = () => {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gray-100 p-6">
+    <div className="min-h-screen pt-30 flex justify-center items-center bg-gray-100 p-6">
       <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-3xl">
         <h1 className="text-3xl font-bold mb-4 text-center">Shopping Cart</h1>
 
@@ -58,9 +58,9 @@ const Cart = () => {
                 </div>
                 <button
                   onClick={() => removeItem(index)}
-                  className="bg-red-700 text-white px-4 py-2 rounded-lg hover:bg-[#903233] transition"
+                  className=" text-gray-500 px-4 py-2 rounded-lg hover:text-[#903233] transition"
                 >
-                  Remove
+                 <ImCross />
                 </button>
               </div>
             ))}

@@ -229,7 +229,7 @@ const Nav = () => {
 
       {/* Mobile Navigation */}
       <div
-        className={`lg:hidden fixed top-22 sm:top-23 left-full sm:w-3xs w-40  bg-[#903233] text-white transition-transform duration-300 ${
+        className={`lg:hidden fixed top-20 sm:top-21 left-full sm:w-3xs w-40  bg-[#903233] text-white transition-transform duration-300 ${
           menu ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -341,9 +341,10 @@ const Nav = () => {
               </div>
             )}
           </div>
-          <button className="  hover:text-[#903233] border-t border-gray-100 text-start pl-2 py-3">
+          <Login />
+          {/* <button className="  hover:text-[#903233] border-t border-gray-100 text-start pl-2 py-3">
             Login/Register
-          </button>
+          </button> */}
         </nav>
       </div>
     </div>

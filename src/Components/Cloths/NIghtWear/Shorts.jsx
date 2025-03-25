@@ -28,6 +28,7 @@ const Shorts = () => {
         { img:  "/cloth/nyt/img15.jpeg", title: "Short Dress", price: 299 ,navigate:"/shop/now" ,colors: ["pink", "yellow", "black"], 
           sizes: ["M", "L", "XL"] },
       ];
+    
 
   return (
     <div>

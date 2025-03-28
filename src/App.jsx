@@ -30,6 +30,7 @@ import Address from './Components/Form/Address'
 import Wishlist from './Components/Form/Wishlist'
 import Orders from './Components/Form/Orders'
 import Notifiaction from './Components/Form/Notifiaction'
+import Maxi from './Components/Cloths/NIghtWear/Maxi'
 
 // import Dress from './Components/Cloths/DayWear/dresses/Dress'
 
@@ -42,9 +43,9 @@ function App() {
     <>
     <Nav />
       <Routes>
-            <Route  path='/' element={<Sec1 />} />
+            {/* <Route  path='/' element={<Sec1 />} /> */}
             <Route  path='/new/trends' element={<New />} />
-            <Route  path='/Women/new/trendy/fashion' element={<Women />} />
+            <Route  path='/' element={<Women />} />
             <Route  path='/mens/section' element={<Mens />} />
             <Route  path='/kids/wear/collection' element={<Kids />} />
             <Route  path='/personal/care/products' element={<Personal />} />
@@ -57,6 +58,7 @@ function App() {
             <Route  path='/cart/items' element={<Cart />} />
             <Route  path='/more/releted/products' element={<ReletedPro />} />
             <Route  path='/nightware/shorts' element={<Shorts />} />
+            <Route  path='/nightware/maxi' element={<Maxi />} />
             <Route  path='/form' element={<Login />} />
             <Route  path='/signup' element={<SignUp />} />
             <Route  path='/signin' element={<SignIn />} />

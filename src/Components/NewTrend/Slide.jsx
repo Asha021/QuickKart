@@ -28,9 +28,9 @@ const Slide = () => {
           onClick={prevSlide} 
         />
 
-        <div className="  relative rounded-lg  h-[270px]  shadow-lg text-center w-full bg-black">
-          <img src={imgs[slide].img} alt='img' className="w-full hidden sm:block top-0 left-0 absolute h-[270px] rounded-lg opacity-55" />
-          <img src={imgs[slide].img2} alt='img' className="w-full sm:hidden top-0 left-0 absolute h-[270px] rounded-lg  opacity-80" />
+        <div className="relative rounded-lg  h-[270px]  shadow-lg text-center w-full bg-black">
+          <img  data-aos="fade-right" src={imgs[slide].img} alt='img' className="w-full hidden sm:block top-0 left-0 absolute h-[270px] rounded-lg opacity-55" />
+          <img  data-aos="fade-right" src={imgs[slide].img2} alt='img' className="w-full sm:hidden top-0 left-0 absolute h-[270px] rounded-lg  opacity-80" />
           <h4 className="mt-4 font-bold absolute  text-white text-3xl max-w-xl lg:text-5xl py-20 mx-5 lg:mx-0 lg:p-20">{imgs[slide].names}</h4> 
         </div>
 

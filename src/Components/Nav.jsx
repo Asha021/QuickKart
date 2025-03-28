@@ -6,7 +6,7 @@ import { CiSearch } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
 import { FaCaretRight, FaAngleDown } from "react-icons/fa6";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import Login from './Form/Login'
+import Login from "./Form/Login";
 
 const Nav = () => {
   const navigate = useNavigate();
@@ -32,16 +32,13 @@ const Nav = () => {
 
       <header className="flex justify-between items-center px-3 py-2 ">
         <div className="gap-6  items-center flex">
-          <h1
-            className="text-2xl px-5 md:text-3xl font-bold text-[#903233] cursor-pointer"
-            onClick={() => navigate("/")}
-          >
+          <h1 className="text-2xl px-5 md:text-3xl font-bold text-[#903233] ">
             QuickKart
           </h1>
           {/* Desktop Navigation */}
           <div className="hidden lg:flex space-x-7  md:space-x-4 items-center">
             <Link
-              to="/Women/new/trendy/fashion"
+              to="/"
               className="text-gray-700  hover:text-[#903233]"
             >
               HOME
@@ -109,7 +106,7 @@ const Nav = () => {
                         Shorts
                       </Link>
                       <br />
-                      <Link className="hover:underline" to="#">
+                      <Link className="hover:underline" to="/nightware/maxi">
                         Maxi
                       </Link>
                       <br />
@@ -214,8 +211,6 @@ const Nav = () => {
             <IoCartOutline />
           </Link>
 
-          {/* <Link to="#" className="text-2xl text-gray-700 hover:text-[#903233]"><FaRegHeart /></Link> */}
-          {/* <Link to="#" className="text-2xl text-gray-700 hover:text-[#903233]"><CiUser /></Link> */}
         </nav>
 
         {/* Hamburger Icon (Mobile) */}
@@ -223,19 +218,19 @@ const Nav = () => {
           className="lg:hidden text-3xl cursor-pointer"
           onClick={() => setMenu(!menu)}
         >
-          {menu ? <AiOutlineMenu /> : <AiOutlineClose />}
+          {menu ? <AiOutlineClose /> :<AiOutlineMenu /> }
         </div>
       </header>
 
       {/* Mobile Navigation */}
       <div
         className={`lg:hidden fixed top-20 sm:top-21 left-full sm:w-3xs w-40  bg-[#903233] text-white transition-transform duration-300 ${
-          menu ? "translate-x-0" : "-translate-x-full"
+          menu ? "-translate-x-full" : "translate-x-0"
         }`}
       >
         <nav className="flex flex-col ">
           <Link
-            to="/Women/new/trendy/fashion"
+            to="/"
             className="  hover:text-[#903233] border-b pl-2 border-gray-100 w-full  py-3"
           >
             HOME
@@ -259,22 +254,33 @@ const Nav = () => {
               >
                 <div className="">
                   <h2 className="nav font-bold text-white pb-2">DAYWEAR</h2>
-                  <ul className="cur text-gray-700 ">
-                    <Link className="hover:underline text-white" to="#">
+                  <ul className="cur  border-r pr-15  text-white">
+                    <Link
+                      className="hover:underline"
+                      to="/traditional/wear/cloths"
+                    >
                       Indian Wear
                     </Link>
                     <br />
-                    <Link className="hover:underline text-white" to="#">
+                    <Link className="hover:underline" to="/western/wear/cloths">
                       Western Wear
                     </Link>
                     <br />
-                    <Link className="hover:underline text-white" to="#">
+                    <Link className="hover:underline" to="/shop/saree">
                       Saree
                     </Link>
                     <br />
-                    {/* <Link className='hover:underline' to="#">Kurti</Link><br />
-            <Link className='hover:underline' to="#">Dresses</Link> */}
-                  </ul>
+                    <Link
+                      className="hover:underline"
+                      to="/trendy/kurti/kurta-sets"
+                    >
+                      Kurti
+                    </Link>
+                    <br />
+                    <Link className="hover:underline" to="/trendy/dresses">
+                      Dresses
+                    </Link>
+                  </ul>{" "}
                 </div>
                 <div className="">
                   <h2 className="nav font-bold pb-2 pt-2 text-white">
@@ -285,7 +291,11 @@ const Nav = () => {
                       Shorts
                     </Link>
                     <br />
-                    <Link className="hover:underline text-white" to="#">
+                    <Link
+                      to="/nightware/maxi"
+                      className="hover:underline text-white"
+                      to="#"
+                    >
                       Maxi
                     </Link>
                     <br />
@@ -342,9 +352,6 @@ const Nav = () => {
             )}
           </div>
           <Login />
-          {/* <button className="  hover:text-[#903233] border-t border-gray-100 text-start pl-2 py-3">
-            Login/Register
-          </button> */}
         </nav>
       </div>
     </div>

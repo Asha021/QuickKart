@@ -23,7 +23,7 @@ const Login = () => {
         onClick={() => navigate("/signin")}
         onMouseEnter={() => setShowPopup(true)}
         // onMouseLeave={() => setShowPopup(false)}
-        className="flex items-center w-full gap-2 border cursor-pointer border-gray-200 hover:border-[#903233] px-4 py-2 lg:rounded-md"
+        className="flex items-center w-full gap-2  cursor-pointer lg:border border-t lg:border-gray-200 hover:border-[#903233] px-4 py-2 lg:rounded-md"
       >
         <FaUserCircle size={24} color="#903233" className="bg-white" />
         <span>{userName ? userName : "Login"}</span>

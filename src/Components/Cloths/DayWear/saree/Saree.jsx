@@ -44,7 +44,7 @@ const Saree = () => {
       className="absolute sm:hidden top-0 left-0 w-full h-full object-cover"
     />
     <div className="text-white top-30 max-w-lg absolute mx-10 z-10 p-5 rounded-lg">
-      <h2 className="text-lg md:text-3xl font-bold">
+      <h2 data-aos="fade-down" data-aos-duration="1500"  className="text-lg md:text-3xl font-bold">
       Saree Styles for Every Occasion: From Casual to Grand Celebrations
       </h2>
     </div>

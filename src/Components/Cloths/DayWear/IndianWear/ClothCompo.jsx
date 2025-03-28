@@ -46,11 +46,12 @@ const ClothCompo = () => {
          
           {(filteredData.length > 0 ? filteredData : data).map((item, index) => (
             <div key={index} onClick={() => navigate(item.navigate, { state: item })} className="border text-center border-gray-200 cursor-pointer p-4">
-              <img src={item.img} alt="img" className="scaleImg " />
+              <img src={item.img} alt="img" className="scaleImg" />
               <h3 className="pt-1">{item.title}</h3>
               <strong className="text-red-700 py-1">₹{item.price}</strong>
             </div>
           ))}
+
         </div>
       </div>
     </div>

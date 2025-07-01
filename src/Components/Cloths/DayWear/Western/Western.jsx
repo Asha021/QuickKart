@@ -10,7 +10,7 @@ const Western = () => {
       const data = [
         { img: "/girlBott/dress2.jpg", title: "BodyCon Dress",sub:"A stylish and comfortable bodycon dress perfect for any occasion.", price: 999,navigate:"/shop/now" ,colors: ["pink", "yellow", "black"], 
           sizes: ["XS","S","M", "L", "XL"]},
-        { img: "/500pxPics/girl.jpg", title: "Floral Dress", price: 599 ,navigate:"/shop/now" ,colors: [,"Red", "yellow", "black"], 
+        { img: "/500pxPics/girl.jpg", title: " Floral Dress", price: 599 ,navigate:"/shop/now" ,colors: [,"Red", "yellow", "black"], 
           sizes: ["M", "L", "XL"] },
         { img: "/girlBott/dress8.jpeg", title: "Short Dress", price: 299 ,navigate:"/shop/now" ,colors: ["Purple", "yellow", "black"], 
           sizes: ["S","M", "L", "XL"] },
@@ -59,12 +59,9 @@ const Western = () => {
       <div className="mx-5  my-8 mt-2">
         <div className="flex justify-between pb-1">
           <h1 className=" font-bold text-2xl lg:text-3xl py-1 pb-4 ">Western Wear</h1>
-
-         
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3  gap-4">
-         
            {(filteredData.length > 0 ? filteredData : data).map((item, index) => (
             <div key={index} onClick={() => navigate(item.navigate, { state: item })} className="border text-center border-gray-200 cursor-pointer p-4">
               <img src={item.img} alt="img" className="scaleImg " />

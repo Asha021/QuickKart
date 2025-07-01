@@ -6,6 +6,7 @@ import { useState } from 'react'
 const Maxi = () => {
   const [data,setData]=useState([]);
   const API =  "https://api.slingacademy.com/v1/sample-data/photos?offset=5&limit=20";
+  const postapi="https://reqres.in/api/users";
 
   useEffect(()=>{
     const getData=async()=>{
@@ -19,6 +20,21 @@ const Maxi = () => {
     }
     getData()
   },[])
+
+  // const postApi =async()=>{
+  //  try {
+  //   const res = await axios.post(("https://reqres.in/api/users",{
+  //     fname:"asha",
+  //     mail:"d2@gmail.com"
+  //   }))
+  //   console.log('====================================');
+  //   console.log(res.data);
+  //   console.log('====================================');
+  //  } catch (error) {
+  //    console.error("feching Error",error)
+  //  }
+  // }
+  // postApi()
 
   return (
     <div>

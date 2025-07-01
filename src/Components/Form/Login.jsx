@@ -75,7 +75,7 @@ const Login = () => {
               {" "}
               <IoMdHeart size={18} color="#903233" className="bg-white" />
               <Link to="/wishlist/items" className="hover:text-blue-500">
-                Whishlist
+                Wishlist
               </Link>
             </li>
 

@@ -19,6 +19,7 @@ const Nav = () => {
   const opens = () => {
     setOpen(!open);
   };
+  
   const opensBridal = () => {
     setBridalOpen(!open);
   };
@@ -294,7 +295,6 @@ const Nav = () => {
                     <Link
                       to="/nightware/maxi"
                       className="hover:underline text-white"
-                      to="#"
                     >
                       Maxi
                     </Link>

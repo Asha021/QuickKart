@@ -8,8 +8,6 @@ const Slide = () => {
     { names: "Grab The Best Deals ", img: "/270px/img1.jpeg" ,img2:"/200small/img1.jpeg"},
     { names: "Summer Offers Buy Now", img: "/270px/mg5.jpeg",img2:"/200small/img2.jpeg" },
     { names: "New Arrivals", img: "/270px/img2.jpeg" ,img2:"/200small/img3.jpeg"},
-    // { names: "Grab Best Deals On Jwellary", img: "/270px/img3.jpeg" },
-    // { names: "Buy & Get 50% Off", img: "/270px/img4.jpeg",img2:"/200small/img2.jpeg" },
   ];
 
   const nextSlide = () => {

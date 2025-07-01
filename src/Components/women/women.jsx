@@ -10,17 +10,17 @@ const women = () => {
   const navigate = useNavigate()
   return (
     <div>
-       <div className="h-screen">
-        <div className="relative h-screen w-full flex items-center justify-start bg-black">
+       <div className="">
+        <div className="relative md:h-screen pt-0 w-full flex items-center justify-start bg-black/50">
           <img
             src="/a2-1.jpg"
             alt="img"
-            className="absolute hidden sm:block top-0 left-0 w-full h-full opacity-80 "
+            className="absolute pt-20 hidden sm:block top-0 left-0 w-full h-full opacity-80 "
           />
           <img
-            src="/cloth/indian/img8.jpeg"
+            src="/200small/img2.jpeg"
             alt="img"
-            className="absolute top-0 sm:hidden left-0 w-full h-full opacity-80 "
+            className="absolute pt-20 top-0 sm:hidden left-0 w-full h-full opacity-80 "
           />
           <div  data-aos="fade-down" data-aos-duration="1500"  className="relative nav p-10 pt-30 mx-5 max-w-xl text-white space-y-5">
             <h1 className="text-3xl  md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight ">

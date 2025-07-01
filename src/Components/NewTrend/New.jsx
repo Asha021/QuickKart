@@ -10,17 +10,17 @@ const New = () => {
   const navigate = useNavigate()
   return (
     <div>
-        <div className="h-screen">
-        <div className="relative h-screen w-full flex items-center justify-start bg-black">
+        <div className="">
+        <div className="relative md:h-screen pt-20 w-full flex items-center justify-start bg-black/50">
           <img
             src="/hat.jpeg"
             alt="img"
-            className="absolute sm:block hidden top-0 left-0 w-full h-full opacity-80"
+            className="absolute pt-20 sm:block hidden top-0 left-0 w-full h-full opacity-80"
           />
             <img
-            src="/cloth/western/img6.jpeg"
+            src="/200small/img1.jpeg"
             alt="img"
-            className="absolute sm:hidden top-0 left-0 w-full h-full opacity-80 "
+            className="absolute pt-20 sm:hidden top-0 left-0 w-full h-full opacity-80 "
           />
           <div  data-aos="fade-down" data-aos-duration="1500"  className="relative nav  p-10  mx-5 max-w-xl text-white space-y-5">
             <h1 className="text-3xl  md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight ">

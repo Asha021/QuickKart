@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { ImCross } from "react-icons/im";
+
 const Cart = () => {
   const location = useLocation();
   const newItem = location.state || null;

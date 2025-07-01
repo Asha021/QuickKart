@@ -25,7 +25,7 @@ const Bottom = () => {
                 <FaInstagramSquare />
               </i>
               <i className="text-2xl cursor-pointer ">
-                <FaTwitter />
+                <FaTwitter /> 
               </i>
               <i className="text-2xl cursor-pointer ">
                 <IoLogoYoutube />

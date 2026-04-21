@@ -23,6 +23,7 @@ const Profile = () => {
  const edit=()=>{
   setInput(!input)
  }
+ 
   return (
   <div className="bg-gray-50">
      <div className=" pb-20 pt-30">

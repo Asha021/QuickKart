@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import ClothCompo from './ClothCompo';
 import ReletedPro from './ReletedPro';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../../../../features/cart/cartSlice';
 
 const Dress1Info = () => {
     const navigate = useNavigate('')
@@ -13,6 +15,18 @@ const Dress1Info = () => {
     const [selectedColor, setSelectedColor] = useState(null);
     const [selectedSize, setSelectedSize] = useState(null);
 
+    const dispatch = useDispatch();
+   
+const handleAdd = () => {
+        console.log("Button Clicked!"); // Pehle ye check karein
+        if (item && item.id) {
+            dispatch(addToCart(item));
+            console.log("Data sent to Redux:", item);
+        } else {
+            console.log("Error: Item ya Item ID missing hai!", item);
+        }
+    };
+    
     return (
         <div className="pt-30 mx-20 p-5">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -74,7 +88,7 @@ const Dress1Info = () => {
 
                     {/* Buttons */}
                     <div className="mt-5 flex gap-3">
-                        <button onClick={()=>navigate("/cart/items",{state:item})} className="bg-red-600 text-white px-6 py-2 rounded-md hover:bg-red-700">Add to Cart</button>
+                        <button  onClick={handleAdd} className="bg-red-600 text-white px-6 py-2 rounded-md hover:bg-red-700">Add to Cart</button>
                         <button className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700">Buy Now</button>
                     </div>
                 </div>

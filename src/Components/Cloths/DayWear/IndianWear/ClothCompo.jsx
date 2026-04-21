@@ -6,25 +6,25 @@ const ClothCompo = () => {
   const [filteredData, setFilteredData] = useState([]);
   const navigate = useNavigate()
   const data = [
-    { img: "/cloth/indian/img1.jpeg", title: "BodyCon Dress",sub:"A stylish and comfortable bodycon dress perfect for any occasion.", price: 999,navigate:"/shop/now" ,colors: ["pink", "yellow", "black"], 
+    {id:1,  img: "/cloth/indian/img1.jpeg", title: "BodyCon Dress",sub:"A stylish and comfortable bodycon dress perfect for any occasion.", price: 999,navigate:"/shop/now" ,colors: ["pink", "yellow", "black"], 
       sizes: ["XS","S","M", "L", "XL"]},
-    { img: "/cloth/indian/img2.jpeg", title: "Floral Dress", price: 599 ,navigate:"/shop/now" ,colors: [,"Red", "yellow", "black"], 
+    {id:2,  img: "/cloth/indian/img2.jpeg", title: "Floral Dress", price: 599 ,navigate:"/shop/now" ,colors: [,"Red", "yellow", "black"], 
       sizes: ["M", "L", "XL"] },
-    { img: "/cloth/indian/mg3.jpeg", title: "Short Dress", price: 299 ,navigate:"/shop/now" ,colors: ["Purple", "yellow", "black"], 
+    {id:3,  img: "/cloth/indian/mg3.jpeg", title: "Short Dress", price: 299 ,navigate:"/shop/now" ,colors: ["Purple", "yellow", "black"], 
       sizes: ["S","M", "L", "XL"] },
-    { img: "/cloth/indian/mg4.jpeg", title: "Skirts", price: 1599,navigate:"/shop/now" ,colors: ["Orange", "yellow", "black"], 
+    {id:4,  img: "/cloth/indian/mg4.jpeg", title: "Skirts", price: 1599,navigate:"/shop/now" ,colors: ["Orange", "yellow", "black"], 
       sizes: ["M", "L", "XL"]  },
-    { img: "/cloth/indian/img1.jpeg", title: "Shirts", price: 699,navigate:"/shop/now" ,colors: ["pink", "yellow", "black","Red"], 
+    {id:5,  img: "/cloth/indian/img1.jpeg", title: "Shirts", price: 699,navigate:"/shop/now" ,colors: ["pink", "yellow", "black","Red"], 
       sizes: ["S","M", "L", "XL"]  },
-    { img: "/cloth/indian/img5.jpeg", title: "Wool", price: 1999 ,navigate:"/shop/now" ,colors: ["silver", "yellow", "black"], 
+    {id:6,  img: "/cloth/indian/img5.jpeg", title: "Wool", price: 1999 ,navigate:"/shop/now" ,colors: ["silver", "yellow", "black"], 
       sizes: ["S","M", "L", "XL"] },
-    { img: "/cloth/indian/mg4.jpeg", title: "Trending Cloths", price: 899,navigate:"/shop/now" ,colors: ["pink", "yellow", "black"], 
+    {id:7,  img: "/cloth/indian/mg4.jpeg", title: "Trending Cloths", price: 899,navigate:"/shop/now" ,colors: ["pink", "yellow", "black"], 
       sizes: ["XS","S","M", "L", "XL"]  },
-    { img: "/cloth/indian/img1.jpeg", title: "BodyCon Dress", price: 999 ,navigate:"/shop/now" ,colors: ["red", "yellow", "black"], 
+    {id:8,  img: "/cloth/indian/img1.jpeg", title: "BodyCon Dress", price: 999 ,navigate:"/shop/now" ,colors: ["red", "yellow", "black"], 
       sizes: ["M", "L", "XL"] },
-    { img: "/cloth/indian/img2.jpeg", title: "Floral Dress", price: 599 ,navigate:"/shop/now" ,colors: ["pink", "yellow", "black"], 
+    {id:9,  img: "/cloth/indian/img2.jpeg", title: "Floral Dress", price: 599 ,navigate:"/shop/now" ,colors: ["pink", "yellow", "black"], 
       sizes: ["XS","S","M", "L", "XL"] },
-    { img: "/cloth/indian/mg3.jpeg", title: "Short Dress", price: 299 ,navigate:"/shop/now" ,colors: ["pink", "yellow", "black"], 
+    {id:10,  img: "/cloth/indian/mg3.jpeg", title: "Short Dress", price: 299 ,navigate:"/shop/now" ,colors: ["pink", "yellow", "black"], 
       sizes: ["M", "L", "XL"] },
   ];
   
@@ -46,11 +46,12 @@ const ClothCompo = () => {
          
           {(filteredData.length > 0 ? filteredData : data).map((item, index) => (
             <div key={index} onClick={() => navigate(item.navigate, { state: item })} className="border text-center border-gray-200 cursor-pointer p-4">
-              <img src={item.img} alt="img" className="scaleImg " />
+              <img src={item.img} alt="img" className="scaleImg" />
               <h3 className="pt-1">{item.title}</h3>
               <strong className="text-red-700 py-1">₹{item.price}</strong>
             </div>
           ))}
+
         </div>
       </div>
     </div>

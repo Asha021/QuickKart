@@ -7,6 +7,7 @@ import { CiUser } from "react-icons/ci";
 import { FaCaretRight, FaAngleDown } from "react-icons/fa6";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Login from "./Form/Login";
+import { useSelector } from "react-redux";
 
 const Nav = () => {
   const navigate = useNavigate();
@@ -15,6 +16,8 @@ const Nav = () => {
   const [menu, setMenu] = useState(false);
   const [open, setOpen] = useState(false);
   const [bridalOpen, setBridalOpen] = useState(false);
+
+  const { totalamount, totalcount } = useSelector((state) => state.cart);
 
   const opens = () => {
     setOpen(!open);
@@ -204,13 +207,25 @@ const Nav = () => {
             className="relative text-2xl text-gray-700 hover:text-[#903233]"
           >
             {/* Cart Count Badge */}
+           
+              <span className="absolute -right-1 -top-2 bg-[#903233] text-white text-xs px-1 rounded-full">
+                {totalcount}
+              </span>
+       
+            <IoCartOutline />
+          </Link>
+          {/* <Link
+            to="/cart/items"
+            className="relative text-2xl text-gray-700 hover:text-[#903233]"
+          >
+          
             {cartItems.length > 0 && (
               <span className="absolute -right-1 -top-2 bg-[#903233] text-white text-xs px-1 rounded-full">
                 {cartItems.length}
               </span>
             )}
             <IoCartOutline />
-          </Link>
+          </Link> */}
 
         </nav>
 
